@@ -1,0 +1,11 @@
+@model UniversityManagement.Core.Models.Course
+
+<h2>Course Details</h2>
+
+<div>
+    <p><b>Name:</b> @Model.Name</p>
+    <p><b>Credits:</b> @Model.Credits</p>
+    <p><b>Teacher:</b> @Model.Teacher?.FirstName @Model.Teacher?.LastName</p>
+</div>
+
+<a asp-action="Index">Back</a>

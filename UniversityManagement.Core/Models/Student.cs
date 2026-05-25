@@ -1,6 +1,6 @@
-using UniversityManagement.Core.Enums;
-
 namespace UniversityManagement.Core.Models;
+
+using UniversityManagement.Core.Enums;
 
 public class Student
 {
@@ -14,11 +14,9 @@ public class Student
 
     public DateTime BirthDate { get; set; }
 
+    public StudentStatus Status { get; set; } = StudentStatus.Active;
+
     public double Rating { get; set; }
-
-    public StudentStatus Status { get; set; }
-
-    public string? ImageUrl { get; set; }
 
     public int GroupId { get; set; }
 
@@ -27,7 +25,4 @@ public class Student
     public List<Grade> Grades { get; set; } = new();
 
     public List<Attendance> Attendances { get; set; } = new();
-
-    public string FullName =>
-        $"{FirstName} {LastName}";
 }

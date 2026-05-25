@@ -1,40 +1,30 @@
 using UniversityManagement.Core.Models;
-using UniversityManagement.Data.Repositories;
 
 namespace UniversityManagement.Services;
 
 public class StudentService
 {
-    private readonly StudentRepository _repository;
+    private readonly List<Student> _students = new();
 
-    public StudentService(
-        StudentRepository repository)
+    public void AddStudent(string firstName, string lastName, string email)
     {
-        _repository = repository;
+        _students.Add(new Student
+        {
+            Id = _students.Count + 1,
+            FirstName = firstName,
+            LastName = lastName,
+            Email = email,
+            Rating = 0
+        });
     }
 
-    public async Task<List<Student>> GetAllAsync()
+    public List<Student> GetAll()
     {
-        return await _repository.GetAllAsync();
+        return _students;
     }
 
-    public async Task<Student?> GetByIdAsync(int id)
+    public Student? GetById(int id)
     {
-        return await _repository.GetByIdAsync(id);
-    }
-
-    public async Task CreateAsync(Student student)
-    {
-        await _repository.AddAsync(student);
-    }
-
-    public async Task UpdateAsync(Student student)
-    {
-        await _repository.UpdateAsync(student);
-    }
-
-    public async Task DeleteAsync(int id)
-    {
-        await _repository.DeleteAsync(id);
+        return _students.FirstOrDefault(s => s.Id == id);
     }
 }

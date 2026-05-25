@@ -1,20 +1,40 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\UniversityManagement.Web.bundle.scp.css",
-      "PackagePath": "staticwebassets\\UniversityManagement.Web.e9owlwaked.bundle.scp.css"
+      "Id": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\calendar.css",
+      "PackagePath": "staticwebassets\\css\\calendar.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\sidebar.css",
+      "PackagePath": "staticwebassets\\css\\sidebar.css"
     },
     {
       "Id": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
+      "Id": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\calendar.js",
+      "PackagePath": "staticwebassets\\js\\calendar.js"
     },
     {
-      "Id": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\charts.js",
+      "PackagePath": "staticwebassets\\js\\charts.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\dashboard.js",
+      "PackagePath": "staticwebassets\\js\\dashboard.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\notifications.js",
+      "PackagePath": "staticwebassets\\js\\notifications.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\sidebar.js",
+      "PackagePath": "staticwebassets\\js\\sidebar.js"
     },
     {
       "Id": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\lib\\bootstrap\\LICENSE",

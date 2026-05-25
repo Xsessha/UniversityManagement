@@ -1,0 +1,27 @@
+@model IEnumerable<UniversityManagement.Core.Models.Attendance>
+
+<h2>Attendance</h2>
+
+<a asp-action="MarkAttendance" class="btn btn-primary">Mark Attendance</a>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>Student</th>
+            <th>Course</th>
+            <th>Status</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var a in Model)
+    {
+        <tr>
+            <td>@a.Student?.FirstName @a.Student?.LastName</td>
+            <td>@a.Lesson?.Topic</td>
+            <td>@a.Status</td>
+            <td>@a.Date.ToShortDateString()</td>
+        </tr>
+    }
+    </tbody>
+</table>

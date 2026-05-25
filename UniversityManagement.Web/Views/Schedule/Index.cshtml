@@ -1,0 +1,28 @@
+@model IEnumerable<UniversityManagement.Core.Models.Schedule>
+
+<h2>Schedule</h2>
+
+<a asp-action="CreateLesson" class="btn btn-primary">Create Lesson</a>
+
+<table class="table table-bordered mt-3">
+    <thead>
+        <tr>
+            <th>Course</th>
+            <th>Teacher</th>
+            <th>Type</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+
+    <tbody>
+    @foreach (var s in Model)
+    {
+        <tr>
+            <td>@s.Lesson?.Course?.Name</td>
+            <td>@s.Lesson?.Course?.Teacher?.FirstName @s.Lesson?.Course?.Teacher?.LastName</td>
+            <td>@s.Lesson?.Type</td>
+            <td>@s.DayOfWeek @s.StartTime - @s.EndTime</td>
+        </tr>
+    }
+    </tbody>
+</table>

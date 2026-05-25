@@ -1,6 +1,6 @@
-using UniversityManagement.Core.Enums;
-
 namespace UniversityManagement.Core.Models;
+
+using UniversityManagement.Core.Enums;
 
 public class Lesson
 {
@@ -8,15 +8,11 @@ public class Lesson
 
     public string Topic { get; set; } = string.Empty;
 
-    public LessonType LessonType { get; set; }
+    public LessonType Type { get; set; }
 
     public DateTime Date { get; set; }
 
     public int CourseId { get; set; }
 
     public Course? Course { get; set; }
-
-    public int TeacherId { get; set; }
-
-    public Teacher? Teacher { get; set; }
 }

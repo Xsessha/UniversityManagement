@@ -1,0 +1,24 @@
+@model IEnumerable<UniversityManagement.Core.Models.Notification>
+
+<h2>Notifications</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Message</th>
+            <th>Date</th>
+            <th>User</th>
+        </tr>
+    </thead>
+
+    <tbody>
+    @foreach (var n in Model)
+    {
+        <tr>
+            <td>@n.Message</td>
+            <td>@n.CreatedAt.ToString("g")</td>
+            <td>@n.Student?.FirstName @n.Student?.LastName</td>
+        </tr>
+    }
+    </tbody>
+</table>

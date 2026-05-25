@@ -1,0 +1,14 @@
+@model IEnumerable<UniversityManagement.Core.Models.Schedule>
+
+<h2>Calendar</h2>
+
+<div class="calendar">
+    @foreach (var item in Model.OrderBy(x => x.DayOfWeek))
+    {
+        <div class="card mb-2 p-2">
+            <b>@item.DayOfWeek @item.StartTime - @item.EndTime</b><br />
+            <span>@item.Lesson?.Topic</span> — 
+            <span>@item.Lesson?.Type</span>
+        </div>
+    }
+</div>

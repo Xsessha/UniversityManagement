@@ -1,0 +1,12 @@
+@model List<UniversityManagement.Core.Models.Student>
+
+<h2>Students</h2>
+
+<a href="/Students/Create">Create</a>
+
+<ul>
+@foreach (var s in Model)
+{
+    <li>@s.FirstName @s.LastName - @s.Email</li>
+}
+</ul>

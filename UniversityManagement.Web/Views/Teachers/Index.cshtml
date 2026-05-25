@@ -1,0 +1,8 @@
+@model List<UniversityManagement.Core.Models.Teacher>
+
+<h2>Teachers</h2>
+
+@foreach (var t in Model)
+{
+    <p>@t.FirstName @t.LastName - @t.Department</p>
+}

@@ -1,60 +1,24 @@
-using Microsoft.EntityFrameworkCore;
+using UniversityManagement.Core.Enums;
 using UniversityManagement.Core.Models;
-using UniversityManagement.Data.Context;
 
 namespace UniversityManagement.Services;
 
 public class ScheduleService
 {
-    private readonly UniversityDbContext? _context;
+    private readonly List<Schedule> _schedule = new();
 
-    private readonly List<Schedule> _schedules = new();
-
-    public ScheduleService()
+    public void Add(string dayOfWeek, string startTime, string endTime, int groupId, int lessonId)
     {
-    }
-
-    public ScheduleService(
-        UniversityDbContext context)
-    {
-        _context = context;
-    }
-
-    public async Task<List<Schedule>> GetAllAsync()
-    {
-        if (_context == null)
-            return _schedules;
-
-        return await _context.Schedules
-            .Include(x => x.Course)
-            .Include(x => x.Teacher)
-            .Include(x => x.Group)
-            .ToListAsync();
-    }
-
-    public List<Schedule> GetAll()
-    {
-        if (_context != null)
+        _schedule.Add(new Schedule
         {
-            return _context.Schedules
-                .Include(x => x.Course)
-                .Include(x => x.Teacher)
-                .Include(x => x.Group)
-                .ToList();
-        }
-
-        return _schedules;
+            Id = _schedule.Count + 1,
+            DayOfWeek = dayOfWeek,
+            StartTime = startTime,
+            EndTime = endTime,
+            GroupId = groupId,
+            LessonId = lessonId
+        });
     }
 
-    public void Add(Schedule schedule)
-    {
-        if (_context != null)
-        {
-            _context.Schedules.Add(schedule);
-            _context.SaveChanges();
-            return;
-        }
-
-        _schedules.Add(schedule);
-    }
+    public List<Schedule> GetAll() => _schedule;
 }

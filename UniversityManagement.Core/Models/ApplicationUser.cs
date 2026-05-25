@@ -1,14 +1,12 @@
+using Microsoft.AspNetCore.Identity;
+using UniversityManagement.Core.Enums;
+
 namespace UniversityManagement.Core.Models;
 
-public class User
+public class ApplicationUser : IdentityUser
 {
-    public int Id { get; set; }
+    public string FirstName { get; set; } = string.Empty;
+    public string LastName { get; set; } = string.Empty;
 
-    public string FullName { get; set; } = string.Empty;
-
-    public string Email { get; set; } = string.Empty;
-
-    public string Password { get; set; } = string.Empty;
-
-    public string Role { get; set; } = "Student";
+    public UserRole Role { get; set; }
 }

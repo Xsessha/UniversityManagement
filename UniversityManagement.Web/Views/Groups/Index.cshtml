@@ -1,0 +1,29 @@
+@model IEnumerable<UniversityManagement.Core.Models.Group>
+
+<h2>Groups</h2>
+
+<a asp-action="Create" class="btn btn-primary">Create Group</a>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Faculty</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+    @foreach (var g in Model)
+    {
+        <tr>
+            <td>@g.Name</td>
+            <td>@g.Faculty?.Name</td>
+            <td>
+                <a asp-action="Details" asp-route-id="@g.Id">Details</a> |
+                <a asp-action="Edit" asp-route-id="@g.Id">Edit</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

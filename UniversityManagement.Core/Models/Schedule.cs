@@ -1,24 +1,20 @@
-using UniversityManagement.Core.Enums;
-
 namespace UniversityManagement.Core.Models;
 
 public class Schedule
 {
     public int Id { get; set; }
 
-    public DateTime Date { get; set; }
+    public string DayOfWeek { get; set; } = string.Empty;
 
-    public LessonType LessonType { get; set; }
+    public string StartTime { get; set; } = string.Empty;
 
-    public int CourseId { get; set; }
-
-    public Course? Course { get; set; }
-
-    public int TeacherId { get; set; }
-
-    public Teacher? Teacher { get; set; }
+    public string EndTime { get; set; } = string.Empty;
 
     public int GroupId { get; set; }
 
     public Group? Group { get; set; }
+
+    public int LessonId { get; set; }
+
+    public Lesson? Lesson { get; set; }
 }

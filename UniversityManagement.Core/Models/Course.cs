@@ -8,13 +8,13 @@ public class Course
 
     public int Credits { get; set; }
 
-    public string? Description { get; set; }
+    public string Description { get; set; } = string.Empty;
 
     public int TeacherId { get; set; }
 
     public Teacher? Teacher { get; set; }
 
-    public List<Student> Students { get; set; } = new();
+    public List<Group> Groups { get; set; } = new();
 
     public List<Lesson> Lessons { get; set; } = new();
 }

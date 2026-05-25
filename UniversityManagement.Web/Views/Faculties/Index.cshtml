@@ -1,0 +1,27 @@
+@model IEnumerable<UniversityManagement.Core.Models.Faculty>
+
+<h2>Faculties</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Groups Count</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+    @foreach (var f in Model)
+    {
+        <tr>
+            <td>@f.Name</td>
+            <td>@f.Groups?.Count()</td>
+            <td>
+                <a asp-action="Details" asp-route-id="@f.Id">Details</a> |
+                <a asp-action="TreeView" asp-route-id="@f.Id">Tree</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

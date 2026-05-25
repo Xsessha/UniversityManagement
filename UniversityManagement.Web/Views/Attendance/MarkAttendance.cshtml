@@ -1,0 +1,30 @@
+@model UniversityManagement.Core.Models.Attendance
+
+<h2>Mark Attendance</h2>
+
+<form asp-action="MarkAttendance" method="post">
+
+    <div>
+        <label>Student</label>
+        <input asp-for="StudentId" class="form-control"/>
+    </div>
+
+    <div>
+        <label>Course</label>
+        <input asp-for="CourseId" class="form-control"/>
+    </div>
+
+    <div>
+        <label>Status</label>
+        <select asp-for="Status" class="form-control">
+            <option>Present</option>
+            <option>Absent</option>
+            <option>Late</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-success mt-2">
+        Save
+    </button>
+
+</form>

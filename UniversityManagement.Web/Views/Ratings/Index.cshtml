@@ -1,0 +1,24 @@
+@model IEnumerable<UniversityManagement.Core.Models.Grade>
+
+<h2>Ratings</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Student</th>
+            <th>Course</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+
+    <tbody>
+    @foreach (var r in Model)
+    {
+        <tr>
+            <td>@r.Student?.FirstName @r.Student?.LastName</td>
+            <td>@r.Course?.Name</td>
+            <td>@r.Value</td>
+        </tr>
+    }
+    </tbody>
+</table>

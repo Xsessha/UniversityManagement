@@ -6,5 +6,7 @@ public class Faculty
 
     public string Name { get; set; } = string.Empty;
 
+    public string Dean { get; set; } = string.Empty;
+
     public List<Group> Groups { get; set; } = new();
 }

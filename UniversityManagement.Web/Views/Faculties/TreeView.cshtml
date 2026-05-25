@@ -1,0 +1,23 @@
+@model UniversityManagement.Core.Models.Faculty
+
+<h2>Faculty Structure</h2>
+
+<h3>@Model.Name</h3>
+
+<ul>
+@foreach (var group in Model.Groups)
+{
+    <li>
+        <b>@group.Name</b>
+
+        <ul>
+        @foreach (var student in group.Students)
+        {
+            <li>@student.FirstName @student.LastName</li>
+        }
+        </ul>
+    </li>
+}
+</ul>
+
+<a asp-action="Index">Back</a>

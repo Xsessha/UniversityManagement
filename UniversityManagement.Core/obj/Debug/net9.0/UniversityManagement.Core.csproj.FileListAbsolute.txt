@@ -9,3 +9,5 @@ C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.
 C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Core\obj\Debug\net9.0\refint\UniversityManagement.Core.dll
 C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Core\obj\Debug\net9.0\UniversityManagement.Core.pdb
 C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Core\obj\Debug\net9.0\ref\UniversityManagement.Core.dll
+C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Core\obj\Debug\net9.0\UniversityManagement.Core.csproj.AssemblyReference.cache
+C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Core\obj\Debug\net9.0\UniversityManagement.Core.sourcelink.json

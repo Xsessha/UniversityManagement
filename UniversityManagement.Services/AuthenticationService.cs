@@ -1,69 +1,24 @@
+using UniversityManagement.Core.Enums;
 using UniversityManagement.Core.Models;
-using UniversityManagement.Data.Context;
 
 namespace UniversityManagement.Services;
 
 public class AuthenticationService
 {
-    private readonly UniversityDbContext _context;
+    private readonly List<ApplicationUser> _users = new();
 
-    public AuthenticationService(
-        UniversityDbContext context)
+    public void Register(string email, UserRole role)
     {
-        _context = context;
-    }
-
-    public User? Login(string email, string password)
-    {
-        if (string.IsNullOrWhiteSpace(email) ||
-            string.IsNullOrWhiteSpace(password))
-            return null;
-
-        var user = _context.Users.FirstOrDefault(u =>
-            u.Email == email &&
-            u.Password == password);
-
-        return user;
-    }
-
-    public User? Register(
-        string fullName,
-        string email,
-        string password)
-    {
-        if (string.IsNullOrWhiteSpace(fullName) ||
-            string.IsNullOrWhiteSpace(email) ||
-            string.IsNullOrWhiteSpace(password))
-            return null;
-
-        var existingUser = _context.Users
-            .FirstOrDefault(u => u.Email == email);
-
-        if (existingUser != null)
-            return null;
-
-        var user = new User
+        _users.Add(new ApplicationUser
         {
-            FullName = fullName,
+            UserName = email,
             Email = email,
-            Password = password,
-            Role = "Student"
-        };
-
-        _context.Users.Add(user);
-        _context.SaveChanges();
-
-        return user;
+            Role = role
+        });
     }
 
-    public bool UserExists(string email)
+    public ApplicationUser? Login(string email)
     {
-        return _context.Users.Any(u =>
-            u.Email == email);
-    }
-
-    public async Task LogoutAsync()
-    {
-        await Task.CompletedTask;
+        return _users.FirstOrDefault(u => u.Email == email);
     }
 }

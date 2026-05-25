@@ -1,0 +1,19 @@
+@model UniversityManagement.Core.Models.Course
+
+<h2>Edit Course</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id"/>
+
+    <div>
+        <label>Name</label>
+        <input asp-for="Name" class="form-control"/>
+    </div>
+
+    <div>
+        <label>Credits</label>
+        <input asp-for="Credits" class="form-control"/>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Update</button>
+</form>

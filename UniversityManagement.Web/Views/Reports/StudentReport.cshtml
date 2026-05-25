@@ -1,0 +1,26 @@
+@model IEnumerable<UniversityManagement.Core.Models.Student>
+
+<h2>Student Report</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Group</th>
+            <th>Rating</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+
+    <tbody>
+    @foreach (var s in Model)
+    {
+        <tr>
+            <td>@s.FirstName @s.LastName</td>
+            <td>@s.Group?.Name</td>
+            <td>@s.Rating</td>
+            <td>@s.Status</td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -4,15 +4,8 @@ namespace UniversityManagement.Services;
 
 public class ReportService
 {
-    public Report GenerateStudentReport(
-        Student student)
+    public void GenerateStudentReport(Student student)
     {
-        return new Report
-        {
-            Title = $"Report: {student.FullName}",
-            GeneratedAt = DateTime.Now,
-            Content =
-                $"Student rating: {student.Rating}"
-        };
+        Console.WriteLine($"Report for {student.FirstName} {student.LastName}, Rating: {student.Rating}");
     }
 }

@@ -1,55 +1,26 @@
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using UniversityManagement.Core.Models;
 using UniversityManagement.Services;
 
 namespace UniversityManagement.Web.Controllers;
 
-[Authorize]
 public class CoursesController : Controller
 {
-    private readonly CourseService _courseService;
+    private readonly CourseService _service;
 
-    public CoursesController(CourseService courseService)
+    public CoursesController(CourseService service)
     {
-        _courseService = courseService;
+        _service = service;
     }
 
-    public async Task<IActionResult> Index()
-    {
-        return View(await _courseService.GetAllAsync());
-    }
+    public IActionResult Index() => View(_service.GetAll());
 
-    public async Task<IActionResult> Details(int id)
-    {
-        var course = await _courseService.GetByIdAsync(id);
-
-        if (course == null)
-            return NotFound();
-
-        return View(course);
-    }
-
-    public IActionResult Create()
-    {
-        return View();
-    }
+    public IActionResult Create() => View();
 
     [HttpPost]
-    public async Task<IActionResult> Create(Course course)
+    public IActionResult Create(Course course)
     {
-        if (!ModelState.IsValid)
-            return View(course);
-
-        await _courseService.CreateAsync(course);
-
-        return RedirectToAction(nameof(Index));
-    }
-
-    public async Task<IActionResult> Delete(int id)
-    {
-        await _courseService.DeleteAsync(id);
-
-        return RedirectToAction(nameof(Index));
+        _service.Add(course.Name, course.Credits, course.Teacher!);
+        return RedirectToAction("Index");
     }
 }

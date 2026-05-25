@@ -49,6 +49,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -96,7 +102,11 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Core\\UniversityManagement.Core.csproj": {
+                "projectPath": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Core\\UniversityManagement.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -114,6 +124,16 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -5,31 +5,15 @@ namespace UniversityManagement.Web.Controllers;
 
 public class RatingsController : Controller
 {
-    private readonly RatingService _ratingService;
+    private readonly RatingService _service;
 
-    public RatingsController(RatingService ratingService)
+    public RatingsController(RatingService service)
     {
-        _ratingService = ratingService;
+        _service = service;
     }
 
-    public async Task<IActionResult> Index()
+    public IActionResult Index()
     {
-        var ratings = await _ratingService.GetRatingsAsync();
-
-        return View(ratings);
-    }
-
-    public async Task<IActionResult> Statistics()
-    {
-        var statistics = await _ratingService.GetStatisticsAsync();
-
-        return View(statistics);
-    }
-
-    public async Task<IActionResult> TopStudents()
-    {
-        var students = await _ratingService.GetTopStudentsAsync();
-
-        return View(students);
+        return View(new List<object>());
     }
 }

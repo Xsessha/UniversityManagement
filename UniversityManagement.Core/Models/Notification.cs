@@ -8,7 +8,11 @@ public class Notification
 
     public string Message { get; set; } = string.Empty;
 
-    public DateTime CreatedAt { get; set; }
+    public DateTime CreatedAt { get; set; } = DateTime.Now;
 
     public bool IsRead { get; set; }
+
+    public int StudentId { get; set; }
+
+    public Student? Student { get; set; }
 }

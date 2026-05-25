@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TnghbJjLd57T+RzYTSOWpTxMF6O9AZ28oDWAg3MAdCw=",
+  "Hash": "cRDWFfqhm3aXEuQWhatkd9AnrTO/JhG95YBkHU8aBJg=",
   "Source": "UniversityManagement.Web",
   "BasePath": "_content/UniversityManagement.Web",
   "Mode": "Default",
@@ -57,6 +57,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\0ax8z7lexf-ifk2vicv2y.gz",
+      "SourceId": "UniversityManagement.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/UniversityManagement.Web",
+      "RelativePath": "js/sidebar#[.{fingerprint=ifk2vicv2y}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\sidebar.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "rl0lc6fxrz",
+      "Integrity": "T4phuwRXkRhh08oia2Ws2wNXvUbb13Ov9+HSy9ann4I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\sidebar.js"
     },
     {
       "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\0cq3opa23d-2z0ns9nrw6.gz",
@@ -162,27 +183,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\1xfmg559rd-e9owlwaked.gz",
-      "SourceId": "UniversityManagement.Web",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\",
-      "BasePath": "_content/UniversityManagement.Web",
-      "RelativePath": "UniversityManagement.Web#[.{fingerprint=e9owlwaked}]!.bundle.scp.css.gz",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\UniversityManagement.Web.bundle.scp.css",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "dtvaaap16f",
-      "Integrity": "b75kaoTJ5rOhLajiG3JS7H3JUFAgl+B4mwO5DCVoB8I=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\UniversityManagement.Web.bundle.scp.css"
     },
     {
       "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\2nfdko3g5b-fsbi9cje9m.gz",
@@ -309,6 +309,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\5hm6c5upgu-sgy5xaon5t.gz",
+      "SourceId": "UniversityManagement.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/UniversityManagement.Web",
+      "RelativePath": "js/charts#[.{fingerprint=sgy5xaon5t}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\charts.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "7wijstzr5u",
+      "Integrity": "Zwad9P177dgJHdusrBZCLw1tQ4ok5GcZ8Bt0Tgh9LsE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\charts.js"
     },
     {
       "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\5itssza58i-0j3bgjxly4.gz",
@@ -477,6 +498,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\9v61uf262o-8xsvgvggz5.gz",
+      "SourceId": "UniversityManagement.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/UniversityManagement.Web",
+      "RelativePath": "js/calendar#[.{fingerprint=8xsvgvggz5}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\calendar.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "4wwgn2ov0n",
+      "Integrity": "hAmO+/0Wj0VUOuN9QmvVldmVgNvBF7MIpp+DPcB1IJI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\calendar.js"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\9wkzhqtr3b-wrfhv9lwnn.gz",
+      "SourceId": "UniversityManagement.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/UniversityManagement.Web",
+      "RelativePath": "js/dashboard#[.{fingerprint=wrfhv9lwnn}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\dashboard.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "h0iixn3res",
+      "Integrity": "T2fkpqBXv4ewA8Y51at3CbjGxtP8nfpuM9mYGrBasC4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\dashboard.js"
     },
     {
       "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\a8e5lf2gp3-0i3buxo5is.gz",
@@ -668,6 +731,27 @@
       "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
+      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\fmcpf38h0n-w92s72sqbh.gz",
+      "SourceId": "UniversityManagement.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/UniversityManagement.Web",
+      "RelativePath": "css/sidebar#[.{fingerprint=w92s72sqbh}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\sidebar.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "fsfhr0qzy0",
+      "Integrity": "L8UMwOzckYMpjeA4TqbeElWt2OOBD8pWHwOlsOTRdzw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\sidebar.css"
+    },
+    {
       "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\fu3f12mc07-k8d9w2qqmf.gz",
       "SourceId": "UniversityManagement.Web",
       "SourceType": "Discovered",
@@ -752,25 +836,25 @@
       "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\muux4wxhz0-e9owlwaked.gz",
+      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\n0yjyj963o-4j7qhcj8l5.gz",
       "SourceId": "UniversityManagement.Web",
-      "SourceType": "Computed",
+      "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/UniversityManagement.Web",
-      "RelativePath": "UniversityManagement.Web#[.{fingerprint=e9owlwaked}]?.styles.css.gz",
+      "RelativePath": "css/dashboard#[.{fingerprint=4j7qhcj8l5}]?.css.gz",
       "AssetKind": "All",
-      "AssetMode": "CurrentProject",
+      "AssetMode": "All",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\scopedcss\\bundle\\UniversityManagement.Web.styles.css",
+      "RelatedAsset": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\dashboard.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "dtvaaap16f",
-      "Integrity": "b75kaoTJ5rOhLajiG3JS7H3JUFAgl+B4mwO5DCVoB8I=",
+      "Fingerprint": "83swwdfetp",
+      "Integrity": "NDpQPKeq6GIqC+7ZGCC9V4XCAtT7pwUsAdwLQWtGcuk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\scopedcss\\bundle\\UniversityManagement.Web.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\dashboard.css"
     },
     {
       "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\n2upwdaebo-pk9g2wxc8p.gz",
@@ -876,6 +960,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\qt56ts57vf-sy8qwmfkwy.gz",
+      "SourceId": "UniversityManagement.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/UniversityManagement.Web",
+      "RelativePath": "js/notifications#[.{fingerprint=sy8qwmfkwy}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\notifications.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "8gkfqpkwc8",
+      "Integrity": "uEwfAjaQLLXkIDP21OSWXiyhWp5wNomqmRg7Br2bhAw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\notifications.js"
     },
     {
       "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\qtwfsh47ej-tdbxkamptv.gz",
@@ -1046,27 +1151,6 @@
       "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\syk6dha1ly-xtxxf3hu2r.gz",
-      "SourceId": "UniversityManagement.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\",
-      "BasePath": "_content/UniversityManagement.Web",
-      "RelativePath": "js/site#[.{fingerprint=xtxxf3hu2r}]?.js.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\site.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "rl5dcbfpcw",
-      "Integrity": "Ydq7YvQUzhbo68waLZeQvZnPOvmTeQ+HyDqjkA1whsA=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\site.js"
-    },
-    {
       "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\tystgkpovu-c2jlpeoesf.gz",
       "SourceId": "UniversityManagement.Web",
       "SourceType": "Discovered",
@@ -1086,27 +1170,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\uxwxw6d4aw-61n19gt1b8.gz",
-      "SourceId": "UniversityManagement.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\",
-      "BasePath": "_content/UniversityManagement.Web",
-      "RelativePath": "favicon#[.{fingerprint=61n19gt1b8}]?.ico.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\favicon.ico",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "nezsohjtde",
-      "Integrity": "wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\favicon.ico"
     },
     {
       "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\voho1kx6xp-fvhpjtyr6v.gz",
@@ -1170,6 +1233,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\wqzomz4db6-0si07h2wia.gz",
+      "SourceId": "UniversityManagement.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/UniversityManagement.Web",
+      "RelativePath": "css/calendar#[.{fingerprint=0si07h2wia}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\calendar.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "1h6p6201ei",
+      "Integrity": "BTtFyDl7++lIH/rmz2Dz6R0qhDEp4GnXKgpNDUecHnc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\calendar.css"
     },
     {
       "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\wuerj5bo1n-jj8uyg4cgr.gz",
@@ -1361,46 +1445,67 @@
       "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\scopedcss\\bundle\\UniversityManagement.Web.styles.css",
+      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\calendar.css",
       "SourceId": "UniversityManagement.Web",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\scopedcss\\bundle\\",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\",
       "BasePath": "_content/UniversityManagement.Web",
-      "RelativePath": "UniversityManagement.Web#[.{fingerprint}]?.styles.css",
+      "RelativePath": "css/calendar#[.{fingerprint}]?.css",
       "AssetKind": "All",
-      "AssetMode": "CurrentProject",
+      "AssetMode": "All",
       "AssetRole": "Primary",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "e9owlwaked",
-      "Integrity": "0pe7NREDb95owzEqd3K2GiSU63JqYiBYxfX5y+bROdM=",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0si07h2wia",
+      "Integrity": "8DU32zUjG4GxcPvT5BL57fyF/EFiNy0SI4LHlOcI3Lc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\scopedcss\\bundle\\UniversityManagement.Web.styles.css"
+      "OriginalItemSpec": "wwwroot\\css\\calendar.css"
     },
     {
-      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\UniversityManagement.Web.bundle.scp.css",
+      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\dashboard.css",
       "SourceId": "UniversityManagement.Web",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\",
       "BasePath": "_content/UniversityManagement.Web",
-      "RelativePath": "UniversityManagement.Web#[.{fingerprint}]!.bundle.scp.css",
+      "RelativePath": "css/dashboard#[.{fingerprint}]?.css",
       "AssetKind": "All",
-      "AssetMode": "Reference",
+      "AssetMode": "All",
       "AssetRole": "Primary",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "e9owlwaked",
-      "Integrity": "0pe7NREDb95owzEqd3K2GiSU63JqYiBYxfX5y+bROdM=",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4j7qhcj8l5",
+      "Integrity": "oDlfPZsbl05vg1FEPllsdtXi++WukCvRtKSkod8e9t8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\UniversityManagement.Web.bundle.scp.css"
+      "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\sidebar.css",
+      "SourceId": "UniversityManagement.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\",
+      "BasePath": "_content/UniversityManagement.Web",
+      "RelativePath": "css/sidebar#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w92s72sqbh",
+      "Integrity": "hOmzN/whWOQsVq6XvH2TrdIaussB7zVsB6VE51KtLAQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\sidebar.css"
     },
     {
       "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\site.css",
@@ -1424,12 +1529,12 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\calendar.js",
       "SourceId": "UniversityManagement.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\",
       "BasePath": "_content/UniversityManagement.Web",
-      "RelativePath": "favicon#[.{fingerprint}]?.ico",
+      "RelativePath": "js/calendar#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1438,19 +1543,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "61n19gt1b8",
-      "Integrity": "Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
+      "Fingerprint": "8xsvgvggz5",
+      "Integrity": "LJB216DOVzs66+H2dMF6zNYnQJw4NICP/PLDC9XLGLc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
+      "OriginalItemSpec": "wwwroot\\js\\calendar.js"
     },
     {
-      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\charts.js",
       "SourceId": "UniversityManagement.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\",
       "BasePath": "_content/UniversityManagement.Web",
-      "RelativePath": "js/site#[.{fingerprint}]?.js",
+      "RelativePath": "js/charts#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1459,11 +1564,74 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xtxxf3hu2r",
-      "Integrity": "hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=",
+      "Fingerprint": "sgy5xaon5t",
+      "Integrity": "vKbGFLEUnVV/NXSiH8Ere5+7xaQ/xttqDWT25c6DR/Q=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
+      "OriginalItemSpec": "wwwroot\\js\\charts.js"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\dashboard.js",
+      "SourceId": "UniversityManagement.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\",
+      "BasePath": "_content/UniversityManagement.Web",
+      "RelativePath": "js/dashboard#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wrfhv9lwnn",
+      "Integrity": "HP3tvaB5pxR1Vtwtabnc1acNzfdkW8H8+pALf0xulmM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\dashboard.js"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\notifications.js",
+      "SourceId": "UniversityManagement.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\",
+      "BasePath": "_content/UniversityManagement.Web",
+      "RelativePath": "js/notifications#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sy8qwmfkwy",
+      "Integrity": "5Ne3SlqQkCt3/xKyIfNOKXmEEA+C511bFLzyHEPaOuw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\notifications.js"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\sidebar.js",
+      "SourceId": "UniversityManagement.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\",
+      "BasePath": "_content/UniversityManagement.Web",
+      "RelativePath": "js/sidebar#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ifk2vicv2y",
+      "Integrity": "EqV7xGPQq0DlzguQeqjFMkipdg0oQAo2X7wcwqHP5aA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\sidebar.js"
     },
     {
       "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
@@ -2728,6 +2896,900 @@
   ],
   "Endpoints": [
     {
+      "Route": "css/calendar.0si07h2wia.css",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\wqzomz4db6-0si07h2wia.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.010869565217"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BTtFyDl7++lIH/rmz2Dz6R0qhDEp4GnXKgpNDUecHnc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"8DU32zUjG4GxcPvT5BL57fyF/EFiNy0SI4LHlOcI3Lc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0si07h2wia"
+        },
+        {
+          "Name": "label",
+          "Value": "css/calendar.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8DU32zUjG4GxcPvT5BL57fyF/EFiNy0SI4LHlOcI3Lc="
+        }
+      ]
+    },
+    {
+      "Route": "css/calendar.0si07h2wia.css",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\calendar.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "78"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8DU32zUjG4GxcPvT5BL57fyF/EFiNy0SI4LHlOcI3Lc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0si07h2wia"
+        },
+        {
+          "Name": "label",
+          "Value": "css/calendar.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8DU32zUjG4GxcPvT5BL57fyF/EFiNy0SI4LHlOcI3Lc="
+        }
+      ]
+    },
+    {
+      "Route": "css/calendar.0si07h2wia.css.gz",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\wqzomz4db6-0si07h2wia.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BTtFyDl7++lIH/rmz2Dz6R0qhDEp4GnXKgpNDUecHnc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0si07h2wia"
+        },
+        {
+          "Name": "label",
+          "Value": "css/calendar.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BTtFyDl7++lIH/rmz2Dz6R0qhDEp4GnXKgpNDUecHnc="
+        }
+      ]
+    },
+    {
+      "Route": "css/calendar.css",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\wqzomz4db6-0si07h2wia.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.010869565217"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BTtFyDl7++lIH/rmz2Dz6R0qhDEp4GnXKgpNDUecHnc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"8DU32zUjG4GxcPvT5BL57fyF/EFiNy0SI4LHlOcI3Lc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8DU32zUjG4GxcPvT5BL57fyF/EFiNy0SI4LHlOcI3Lc="
+        }
+      ]
+    },
+    {
+      "Route": "css/calendar.css",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\calendar.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "78"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8DU32zUjG4GxcPvT5BL57fyF/EFiNy0SI4LHlOcI3Lc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8DU32zUjG4GxcPvT5BL57fyF/EFiNy0SI4LHlOcI3Lc="
+        }
+      ]
+    },
+    {
+      "Route": "css/calendar.css.gz",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\wqzomz4db6-0si07h2wia.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BTtFyDl7++lIH/rmz2Dz6R0qhDEp4GnXKgpNDUecHnc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BTtFyDl7++lIH/rmz2Dz6R0qhDEp4GnXKgpNDUecHnc="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.4j7qhcj8l5.css",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\n0yjyj963o-4j7qhcj8l5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.017857142857"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NDpQPKeq6GIqC+7ZGCC9V4XCAtT7pwUsAdwLQWtGcuk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:44:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"oDlfPZsbl05vg1FEPllsdtXi++WukCvRtKSkod8e9t8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4j7qhcj8l5"
+        },
+        {
+          "Name": "label",
+          "Value": "css/dashboard.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oDlfPZsbl05vg1FEPllsdtXi++WukCvRtKSkod8e9t8="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.4j7qhcj8l5.css",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oDlfPZsbl05vg1FEPllsdtXi++WukCvRtKSkod8e9t8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:44:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4j7qhcj8l5"
+        },
+        {
+          "Name": "label",
+          "Value": "css/dashboard.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oDlfPZsbl05vg1FEPllsdtXi++WukCvRtKSkod8e9t8="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.4j7qhcj8l5.css.gz",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\n0yjyj963o-4j7qhcj8l5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NDpQPKeq6GIqC+7ZGCC9V4XCAtT7pwUsAdwLQWtGcuk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:44:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4j7qhcj8l5"
+        },
+        {
+          "Name": "label",
+          "Value": "css/dashboard.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NDpQPKeq6GIqC+7ZGCC9V4XCAtT7pwUsAdwLQWtGcuk="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.css",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\n0yjyj963o-4j7qhcj8l5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.017857142857"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NDpQPKeq6GIqC+7ZGCC9V4XCAtT7pwUsAdwLQWtGcuk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:44:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"oDlfPZsbl05vg1FEPllsdtXi++WukCvRtKSkod8e9t8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oDlfPZsbl05vg1FEPllsdtXi++WukCvRtKSkod8e9t8="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.css",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oDlfPZsbl05vg1FEPllsdtXi++WukCvRtKSkod8e9t8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:44:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oDlfPZsbl05vg1FEPllsdtXi++WukCvRtKSkod8e9t8="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.css.gz",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\n0yjyj963o-4j7qhcj8l5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NDpQPKeq6GIqC+7ZGCC9V4XCAtT7pwUsAdwLQWtGcuk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:44:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NDpQPKeq6GIqC+7ZGCC9V4XCAtT7pwUsAdwLQWtGcuk="
+        }
+      ]
+    },
+    {
+      "Route": "css/sidebar.css",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\fmcpf38h0n-w92s72sqbh.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.010000000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "99"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L8UMwOzckYMpjeA4TqbeElWt2OOBD8pWHwOlsOTRdzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:44:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"hOmzN/whWOQsVq6XvH2TrdIaussB7zVsB6VE51KtLAQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hOmzN/whWOQsVq6XvH2TrdIaussB7zVsB6VE51KtLAQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/sidebar.css",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\sidebar.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "94"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hOmzN/whWOQsVq6XvH2TrdIaussB7zVsB6VE51KtLAQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:44:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hOmzN/whWOQsVq6XvH2TrdIaussB7zVsB6VE51KtLAQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/sidebar.css.gz",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\fmcpf38h0n-w92s72sqbh.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "99"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L8UMwOzckYMpjeA4TqbeElWt2OOBD8pWHwOlsOTRdzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:44:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-L8UMwOzckYMpjeA4TqbeElWt2OOBD8pWHwOlsOTRdzw="
+        }
+      ]
+    },
+    {
+      "Route": "css/sidebar.w92s72sqbh.css",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\fmcpf38h0n-w92s72sqbh.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.010000000000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "99"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L8UMwOzckYMpjeA4TqbeElWt2OOBD8pWHwOlsOTRdzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:44:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"hOmzN/whWOQsVq6XvH2TrdIaussB7zVsB6VE51KtLAQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w92s72sqbh"
+        },
+        {
+          "Name": "label",
+          "Value": "css/sidebar.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hOmzN/whWOQsVq6XvH2TrdIaussB7zVsB6VE51KtLAQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/sidebar.w92s72sqbh.css",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\sidebar.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "94"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hOmzN/whWOQsVq6XvH2TrdIaussB7zVsB6VE51KtLAQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:44:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w92s72sqbh"
+        },
+        {
+          "Name": "label",
+          "Value": "css/sidebar.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hOmzN/whWOQsVq6XvH2TrdIaussB7zVsB6VE51KtLAQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/sidebar.w92s72sqbh.css.gz",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\fmcpf38h0n-w92s72sqbh.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "99"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L8UMwOzckYMpjeA4TqbeElWt2OOBD8pWHwOlsOTRdzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:44:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w92s72sqbh"
+        },
+        {
+          "Name": "label",
+          "Value": "css/sidebar.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-L8UMwOzckYMpjeA4TqbeElWt2OOBD8pWHwOlsOTRdzw="
+        }
+      ]
+    },
+    {
       "Route": "css/site.b9sayid5wm.css",
       "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\xrffj4o99o-b9sayid5wm.gz",
       "Selectors": [
@@ -3026,13 +4088,13 @@
       ]
     },
     {
-      "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\uxwxw6d4aw-61n19gt1b8.gz",
+      "Route": "js/calendar.8xsvgvggz5.js",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\9v61uf262o-8xsvgvggz5.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000405022276"
+          "Quality": "0.019607843137"
         }
       ],
       "ResponseHeaders": [
@@ -3042,15 +4104,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2468"
+          "Value": "50"
         },
         {
           "Name": "ETag",
-          "Value": "\"wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0=\""
+          "Value": "\"hAmO+/0Wj0VUOuN9QmvVldmVgNvBF7MIpp+DPcB1IJI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:11:56 GMT"
+          "Value": "Mon, 25 May 2026 14:45:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3066,31 +4128,31 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/x-icon"
+          "Value": "text/javascript"
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+          "Value": "W/\"LJB216DOVzs66+H2dMF6zNYnQJw4NICP/PLDC9XLGLc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "61n19gt1b8"
+          "Value": "8xsvgvggz5"
         },
         {
           "Name": "label",
-          "Value": "favicon.ico"
+          "Value": "js/calendar.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+          "Value": "sha256-LJB216DOVzs66+H2dMF6zNYnQJw4NICP/PLDC9XLGLc="
         }
       ]
     },
     {
-      "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\favicon.ico",
+      "Route": "js/calendar.8xsvgvggz5.js",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\calendar.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3099,19 +4161,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5430"
+          "Value": "30"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/x-icon"
+          "Value": "text/javascript"
         },
         {
           "Name": "ETag",
-          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+          "Value": "\"LJB216DOVzs66+H2dMF6zNYnQJw4NICP/PLDC9XLGLc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:11:56 GMT"
+          "Value": "Mon, 25 May 2026 14:45:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3121,21 +4183,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "61n19gt1b8"
+          "Value": "8xsvgvggz5"
         },
         {
           "Name": "label",
-          "Value": "favicon.ico"
+          "Value": "js/calendar.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+          "Value": "sha256-LJB216DOVzs66+H2dMF6zNYnQJw4NICP/PLDC9XLGLc="
         }
       ]
     },
     {
-      "Route": "favicon.61n19gt1b8.ico.gz",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\uxwxw6d4aw-61n19gt1b8.gz",
+      "Route": "js/calendar.8xsvgvggz5.js.gz",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\9v61uf262o-8xsvgvggz5.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3144,19 +4206,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2468"
+          "Value": "50"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/x-icon"
+          "Value": "text/javascript"
         },
         {
           "Name": "ETag",
-          "Value": "\"wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0=\""
+          "Value": "\"hAmO+/0Wj0VUOuN9QmvVldmVgNvBF7MIpp+DPcB1IJI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:11:56 GMT"
+          "Value": "Mon, 25 May 2026 14:45:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3174,26 +4236,26 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "61n19gt1b8"
+          "Value": "8xsvgvggz5"
         },
         {
           "Name": "label",
-          "Value": "favicon.ico.gz"
+          "Value": "js/calendar.js.gz"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0="
+          "Value": "sha256-hAmO+/0Wj0VUOuN9QmvVldmVgNvBF7MIpp+DPcB1IJI="
         }
       ]
     },
     {
-      "Route": "favicon.ico",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\uxwxw6d4aw-61n19gt1b8.gz",
+      "Route": "js/calendar.js",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\9v61uf262o-8xsvgvggz5.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000405022276"
+          "Quality": "0.019607843137"
         }
       ],
       "ResponseHeaders": [
@@ -3203,15 +4265,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2468"
+          "Value": "50"
         },
         {
           "Name": "ETag",
-          "Value": "\"wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0=\""
+          "Value": "\"hAmO+/0Wj0VUOuN9QmvVldmVgNvBF7MIpp+DPcB1IJI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:11:56 GMT"
+          "Value": "Mon, 25 May 2026 14:45:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3227,23 +4289,23 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/x-icon"
+          "Value": "text/javascript"
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+          "Value": "W/\"LJB216DOVzs66+H2dMF6zNYnQJw4NICP/PLDC9XLGLc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+          "Value": "sha256-LJB216DOVzs66+H2dMF6zNYnQJw4NICP/PLDC9XLGLc="
         }
       ]
     },
     {
-      "Route": "favicon.ico",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\favicon.ico",
+      "Route": "js/calendar.js",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\calendar.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3252,35 +4314,35 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5430"
+          "Value": "30"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/x-icon"
+          "Value": "text/javascript"
         },
         {
           "Name": "ETag",
-          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+          "Value": "\"LJB216DOVzs66+H2dMF6zNYnQJw4NICP/PLDC9XLGLc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:11:56 GMT"
+          "Value": "Mon, 25 May 2026 14:45:52 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
+          "Value": "no-cache"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+          "Value": "sha256-LJB216DOVzs66+H2dMF6zNYnQJw4NICP/PLDC9XLGLc="
         }
       ]
     },
     {
-      "Route": "favicon.ico.gz",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\uxwxw6d4aw-61n19gt1b8.gz",
+      "Route": "js/calendar.js.gz",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\9v61uf262o-8xsvgvggz5.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3289,19 +4351,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2468"
+          "Value": "50"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/x-icon"
+          "Value": "text/javascript"
         },
         {
           "Name": "ETag",
-          "Value": "\"wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0=\""
+          "Value": "\"hAmO+/0Wj0VUOuN9QmvVldmVgNvBF7MIpp+DPcB1IJI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:11:56 GMT"
+          "Value": "Mon, 25 May 2026 14:45:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3319,18 +4381,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0="
+          "Value": "sha256-hAmO+/0Wj0VUOuN9QmvVldmVgNvBF7MIpp+DPcB1IJI="
         }
       ]
     },
     {
-      "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\syk6dha1ly-xtxxf3hu2r.gz",
+      "Route": "js/charts.js",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\5hm6c5upgu-sgy5xaon5t.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.005263157895"
+          "Quality": "0.020408163265"
         }
       ],
       "ResponseHeaders": [
@@ -3340,15 +4402,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "189"
+          "Value": "48"
         },
         {
           "Name": "ETag",
-          "Value": "\"Ydq7YvQUzhbo68waLZeQvZnPOvmTeQ+HyDqjkA1whsA=\""
+          "Value": "\"Zwad9P177dgJHdusrBZCLw1tQ4ok5GcZ8Bt0Tgh9LsE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:11:56 GMT"
+          "Value": "Mon, 25 May 2026 14:45:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3368,19 +4430,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "W/\"vKbGFLEUnVV/NXSiH8Ere5+7xaQ/xttqDWT25c6DR/Q=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-vKbGFLEUnVV/NXSiH8Ere5+7xaQ/xttqDWT25c6DR/Q="
         }
       ]
     },
     {
-      "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\site.js",
+      "Route": "js/charts.js",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\charts.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3389,7 +4451,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "231"
+          "Value": "28"
         },
         {
           "Name": "Content-Type",
@@ -3397,11 +4459,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "\"vKbGFLEUnVV/NXSiH8Ere5+7xaQ/xttqDWT25c6DR/Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:11:56 GMT"
+          "Value": "Mon, 25 May 2026 14:45:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3411,13 +4473,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-vKbGFLEUnVV/NXSiH8Ere5+7xaQ/xttqDWT25c6DR/Q="
         }
       ]
     },
     {
-      "Route": "js/site.js.gz",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\syk6dha1ly-xtxxf3hu2r.gz",
+      "Route": "js/charts.js.gz",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\5hm6c5upgu-sgy5xaon5t.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3426,7 +4488,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "189"
+          "Value": "48"
         },
         {
           "Name": "Content-Type",
@@ -3434,11 +4496,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ydq7YvQUzhbo68waLZeQvZnPOvmTeQ+HyDqjkA1whsA=\""
+          "Value": "\"Zwad9P177dgJHdusrBZCLw1tQ4ok5GcZ8Bt0Tgh9LsE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:11:56 GMT"
+          "Value": "Mon, 25 May 2026 14:45:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3456,18 +4518,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ydq7YvQUzhbo68waLZeQvZnPOvmTeQ+HyDqjkA1whsA="
+          "Value": "sha256-Zwad9P177dgJHdusrBZCLw1tQ4ok5GcZ8Bt0Tgh9LsE="
         }
       ]
     },
     {
-      "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\syk6dha1ly-xtxxf3hu2r.gz",
+      "Route": "js/charts.sgy5xaon5t.js",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\5hm6c5upgu-sgy5xaon5t.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.005263157895"
+          "Quality": "0.020408163265"
         }
       ],
       "ResponseHeaders": [
@@ -3477,15 +4539,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "189"
+          "Value": "48"
         },
         {
           "Name": "ETag",
-          "Value": "\"Ydq7YvQUzhbo68waLZeQvZnPOvmTeQ+HyDqjkA1whsA=\""
+          "Value": "\"Zwad9P177dgJHdusrBZCLw1tQ4ok5GcZ8Bt0Tgh9LsE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:11:56 GMT"
+          "Value": "Mon, 25 May 2026 14:45:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3505,27 +4567,27 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "W/\"vKbGFLEUnVV/NXSiH8Ere5+7xaQ/xttqDWT25c6DR/Q=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xtxxf3hu2r"
+          "Value": "sgy5xaon5t"
         },
         {
           "Name": "label",
-          "Value": "js/site.js"
+          "Value": "js/charts.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-vKbGFLEUnVV/NXSiH8Ere5+7xaQ/xttqDWT25c6DR/Q="
         }
       ]
     },
     {
-      "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\site.js",
+      "Route": "js/charts.sgy5xaon5t.js",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\charts.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3534,7 +4596,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "231"
+          "Value": "28"
         },
         {
           "Name": "Content-Type",
@@ -3542,11 +4604,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "\"vKbGFLEUnVV/NXSiH8Ere5+7xaQ/xttqDWT25c6DR/Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:11:56 GMT"
+          "Value": "Mon, 25 May 2026 14:45:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3556,21 +4618,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xtxxf3hu2r"
+          "Value": "sgy5xaon5t"
         },
         {
           "Name": "label",
-          "Value": "js/site.js"
+          "Value": "js/charts.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-vKbGFLEUnVV/NXSiH8Ere5+7xaQ/xttqDWT25c6DR/Q="
         }
       ]
     },
     {
-      "Route": "js/site.xtxxf3hu2r.js.gz",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\syk6dha1ly-xtxxf3hu2r.gz",
+      "Route": "js/charts.sgy5xaon5t.js.gz",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\5hm6c5upgu-sgy5xaon5t.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3579,7 +4641,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "189"
+          "Value": "48"
         },
         {
           "Name": "Content-Type",
@@ -3587,11 +4649,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ydq7YvQUzhbo68waLZeQvZnPOvmTeQ+HyDqjkA1whsA=\""
+          "Value": "\"Zwad9P177dgJHdusrBZCLw1tQ4ok5GcZ8Bt0Tgh9LsE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:11:56 GMT"
+          "Value": "Mon, 25 May 2026 14:45:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3609,15 +4671,909 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xtxxf3hu2r"
+          "Value": "sgy5xaon5t"
         },
         {
           "Name": "label",
-          "Value": "js/site.js.gz"
+          "Value": "js/charts.js.gz"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ydq7YvQUzhbo68waLZeQvZnPOvmTeQ+HyDqjkA1whsA="
+          "Value": "sha256-Zwad9P177dgJHdusrBZCLw1tQ4ok5GcZ8Bt0Tgh9LsE="
+        }
+      ]
+    },
+    {
+      "Route": "js/dashboard.js",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\9wkzhqtr3b-wrfhv9lwnn.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.018867924528"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T2fkpqBXv4ewA8Y51at3CbjGxtP8nfpuM9mYGrBasC4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"HP3tvaB5pxR1Vtwtabnc1acNzfdkW8H8+pALf0xulmM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HP3tvaB5pxR1Vtwtabnc1acNzfdkW8H8+pALf0xulmM="
+        }
+      ]
+    },
+    {
+      "Route": "js/dashboard.js",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\dashboard.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HP3tvaB5pxR1Vtwtabnc1acNzfdkW8H8+pALf0xulmM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HP3tvaB5pxR1Vtwtabnc1acNzfdkW8H8+pALf0xulmM="
+        }
+      ]
+    },
+    {
+      "Route": "js/dashboard.js.gz",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\9wkzhqtr3b-wrfhv9lwnn.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T2fkpqBXv4ewA8Y51at3CbjGxtP8nfpuM9mYGrBasC4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-T2fkpqBXv4ewA8Y51at3CbjGxtP8nfpuM9mYGrBasC4="
+        }
+      ]
+    },
+    {
+      "Route": "js/dashboard.wrfhv9lwnn.js",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\9wkzhqtr3b-wrfhv9lwnn.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.018867924528"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T2fkpqBXv4ewA8Y51at3CbjGxtP8nfpuM9mYGrBasC4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"HP3tvaB5pxR1Vtwtabnc1acNzfdkW8H8+pALf0xulmM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wrfhv9lwnn"
+        },
+        {
+          "Name": "label",
+          "Value": "js/dashboard.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HP3tvaB5pxR1Vtwtabnc1acNzfdkW8H8+pALf0xulmM="
+        }
+      ]
+    },
+    {
+      "Route": "js/dashboard.wrfhv9lwnn.js",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\dashboard.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HP3tvaB5pxR1Vtwtabnc1acNzfdkW8H8+pALf0xulmM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wrfhv9lwnn"
+        },
+        {
+          "Name": "label",
+          "Value": "js/dashboard.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HP3tvaB5pxR1Vtwtabnc1acNzfdkW8H8+pALf0xulmM="
+        }
+      ]
+    },
+    {
+      "Route": "js/dashboard.wrfhv9lwnn.js.gz",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\9wkzhqtr3b-wrfhv9lwnn.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T2fkpqBXv4ewA8Y51at3CbjGxtP8nfpuM9mYGrBasC4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wrfhv9lwnn"
+        },
+        {
+          "Name": "label",
+          "Value": "js/dashboard.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-T2fkpqBXv4ewA8Y51at3CbjGxtP8nfpuM9mYGrBasC4="
+        }
+      ]
+    },
+    {
+      "Route": "js/notifications.js",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\qt56ts57vf-sy8qwmfkwy.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.011494252874"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "86"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uEwfAjaQLLXkIDP21OSWXiyhWp5wNomqmRg7Br2bhAw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"5Ne3SlqQkCt3/xKyIfNOKXmEEA+C511bFLzyHEPaOuw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5Ne3SlqQkCt3/xKyIfNOKXmEEA+C511bFLzyHEPaOuw="
+        }
+      ]
+    },
+    {
+      "Route": "js/notifications.js",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\notifications.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5Ne3SlqQkCt3/xKyIfNOKXmEEA+C511bFLzyHEPaOuw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5Ne3SlqQkCt3/xKyIfNOKXmEEA+C511bFLzyHEPaOuw="
+        }
+      ]
+    },
+    {
+      "Route": "js/notifications.js.gz",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\qt56ts57vf-sy8qwmfkwy.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "86"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uEwfAjaQLLXkIDP21OSWXiyhWp5wNomqmRg7Br2bhAw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uEwfAjaQLLXkIDP21OSWXiyhWp5wNomqmRg7Br2bhAw="
+        }
+      ]
+    },
+    {
+      "Route": "js/notifications.sy8qwmfkwy.js",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\qt56ts57vf-sy8qwmfkwy.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.011494252874"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "86"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uEwfAjaQLLXkIDP21OSWXiyhWp5wNomqmRg7Br2bhAw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"5Ne3SlqQkCt3/xKyIfNOKXmEEA+C511bFLzyHEPaOuw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sy8qwmfkwy"
+        },
+        {
+          "Name": "label",
+          "Value": "js/notifications.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5Ne3SlqQkCt3/xKyIfNOKXmEEA+C511bFLzyHEPaOuw="
+        }
+      ]
+    },
+    {
+      "Route": "js/notifications.sy8qwmfkwy.js",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\notifications.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5Ne3SlqQkCt3/xKyIfNOKXmEEA+C511bFLzyHEPaOuw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sy8qwmfkwy"
+        },
+        {
+          "Name": "label",
+          "Value": "js/notifications.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5Ne3SlqQkCt3/xKyIfNOKXmEEA+C511bFLzyHEPaOuw="
+        }
+      ]
+    },
+    {
+      "Route": "js/notifications.sy8qwmfkwy.js.gz",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\qt56ts57vf-sy8qwmfkwy.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "86"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uEwfAjaQLLXkIDP21OSWXiyhWp5wNomqmRg7Br2bhAw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sy8qwmfkwy"
+        },
+        {
+          "Name": "label",
+          "Value": "js/notifications.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uEwfAjaQLLXkIDP21OSWXiyhWp5wNomqmRg7Br2bhAw="
+        }
+      ]
+    },
+    {
+      "Route": "js/sidebar.ifk2vicv2y.js",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\0ax8z7lexf-ifk2vicv2y.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.019607843137"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T4phuwRXkRhh08oia2Ws2wNXvUbb13Ov9+HSy9ann4I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"EqV7xGPQq0DlzguQeqjFMkipdg0oQAo2X7wcwqHP5aA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ifk2vicv2y"
+        },
+        {
+          "Name": "label",
+          "Value": "js/sidebar.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EqV7xGPQq0DlzguQeqjFMkipdg0oQAo2X7wcwqHP5aA="
+        }
+      ]
+    },
+    {
+      "Route": "js/sidebar.ifk2vicv2y.js",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\sidebar.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EqV7xGPQq0DlzguQeqjFMkipdg0oQAo2X7wcwqHP5aA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ifk2vicv2y"
+        },
+        {
+          "Name": "label",
+          "Value": "js/sidebar.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EqV7xGPQq0DlzguQeqjFMkipdg0oQAo2X7wcwqHP5aA="
+        }
+      ]
+    },
+    {
+      "Route": "js/sidebar.ifk2vicv2y.js.gz",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\0ax8z7lexf-ifk2vicv2y.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T4phuwRXkRhh08oia2Ws2wNXvUbb13Ov9+HSy9ann4I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ifk2vicv2y"
+        },
+        {
+          "Name": "label",
+          "Value": "js/sidebar.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-T4phuwRXkRhh08oia2Ws2wNXvUbb13Ov9+HSy9ann4I="
+        }
+      ]
+    },
+    {
+      "Route": "js/sidebar.js",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\0ax8z7lexf-ifk2vicv2y.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.019607843137"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T4phuwRXkRhh08oia2Ws2wNXvUbb13Ov9+HSy9ann4I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"EqV7xGPQq0DlzguQeqjFMkipdg0oQAo2X7wcwqHP5aA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EqV7xGPQq0DlzguQeqjFMkipdg0oQAo2X7wcwqHP5aA="
+        }
+      ]
+    },
+    {
+      "Route": "js/sidebar.js",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\js\\sidebar.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EqV7xGPQq0DlzguQeqjFMkipdg0oQAo2X7wcwqHP5aA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EqV7xGPQq0DlzguQeqjFMkipdg0oQAo2X7wcwqHP5aA="
+        }
+      ]
+    },
+    {
+      "Route": "js/sidebar.js.gz",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\0ax8z7lexf-ifk2vicv2y.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T4phuwRXkRhh08oia2Ws2wNXvUbb13Ov9+HSy9ann4I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 May 2026 14:45:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-T4phuwRXkRhh08oia2Ws2wNXvUbb13Ov9+HSy9ann4I="
         }
       ]
     },
@@ -21282,602 +23238,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-JKWeHUaANNuffeRatdc54UCb84RoxjEw/nTq8Mops8Y="
-        }
-      ]
-    },
-    {
-      "Route": "UniversityManagement.Web.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\1xfmg559rd-e9owlwaked.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001824817518"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "547"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"b75kaoTJ5rOhLajiG3JS7H3JUFAgl+B4mwO5DCVoB8I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:14:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"0pe7NREDb95owzEqd3K2GiSU63JqYiBYxfX5y+bROdM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-0pe7NREDb95owzEqd3K2GiSU63JqYiBYxfX5y+bROdM="
-        }
-      ]
-    },
-    {
-      "Route": "UniversityManagement.Web.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\UniversityManagement.Web.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1142"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0pe7NREDb95owzEqd3K2GiSU63JqYiBYxfX5y+bROdM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:14:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-0pe7NREDb95owzEqd3K2GiSU63JqYiBYxfX5y+bROdM="
-        }
-      ]
-    },
-    {
-      "Route": "UniversityManagement.Web.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\1xfmg559rd-e9owlwaked.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "547"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"b75kaoTJ5rOhLajiG3JS7H3JUFAgl+B4mwO5DCVoB8I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:14:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-b75kaoTJ5rOhLajiG3JS7H3JUFAgl+B4mwO5DCVoB8I="
-        }
-      ]
-    },
-    {
-      "Route": "UniversityManagement.Web.e9owlwaked.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\1xfmg559rd-e9owlwaked.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001824817518"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "547"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"b75kaoTJ5rOhLajiG3JS7H3JUFAgl+B4mwO5DCVoB8I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:14:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"0pe7NREDb95owzEqd3K2GiSU63JqYiBYxfX5y+bROdM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "e9owlwaked"
-        },
-        {
-          "Name": "label",
-          "Value": "UniversityManagement.Web.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-0pe7NREDb95owzEqd3K2GiSU63JqYiBYxfX5y+bROdM="
-        }
-      ]
-    },
-    {
-      "Route": "UniversityManagement.Web.e9owlwaked.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\UniversityManagement.Web.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1142"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0pe7NREDb95owzEqd3K2GiSU63JqYiBYxfX5y+bROdM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:14:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "e9owlwaked"
-        },
-        {
-          "Name": "label",
-          "Value": "UniversityManagement.Web.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-0pe7NREDb95owzEqd3K2GiSU63JqYiBYxfX5y+bROdM="
-        }
-      ]
-    },
-    {
-      "Route": "UniversityManagement.Web.e9owlwaked.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\1xfmg559rd-e9owlwaked.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "547"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"b75kaoTJ5rOhLajiG3JS7H3JUFAgl+B4mwO5DCVoB8I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:14:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "e9owlwaked"
-        },
-        {
-          "Name": "label",
-          "Value": "UniversityManagement.Web.bundle.scp.css.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-b75kaoTJ5rOhLajiG3JS7H3JUFAgl+B4mwO5DCVoB8I="
-        }
-      ]
-    },
-    {
-      "Route": "UniversityManagement.Web.e9owlwaked.styles.css",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\muux4wxhz0-e9owlwaked.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001824817518"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "547"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"b75kaoTJ5rOhLajiG3JS7H3JUFAgl+B4mwO5DCVoB8I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:14:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"0pe7NREDb95owzEqd3K2GiSU63JqYiBYxfX5y+bROdM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "e9owlwaked"
-        },
-        {
-          "Name": "label",
-          "Value": "UniversityManagement.Web.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-0pe7NREDb95owzEqd3K2GiSU63JqYiBYxfX5y+bROdM="
-        }
-      ]
-    },
-    {
-      "Route": "UniversityManagement.Web.e9owlwaked.styles.css",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\scopedcss\\bundle\\UniversityManagement.Web.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1142"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0pe7NREDb95owzEqd3K2GiSU63JqYiBYxfX5y+bROdM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:14:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "e9owlwaked"
-        },
-        {
-          "Name": "label",
-          "Value": "UniversityManagement.Web.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-0pe7NREDb95owzEqd3K2GiSU63JqYiBYxfX5y+bROdM="
-        }
-      ]
-    },
-    {
-      "Route": "UniversityManagement.Web.e9owlwaked.styles.css.gz",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\muux4wxhz0-e9owlwaked.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "547"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"b75kaoTJ5rOhLajiG3JS7H3JUFAgl+B4mwO5DCVoB8I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:14:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "e9owlwaked"
-        },
-        {
-          "Name": "label",
-          "Value": "UniversityManagement.Web.styles.css.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-b75kaoTJ5rOhLajiG3JS7H3JUFAgl+B4mwO5DCVoB8I="
-        }
-      ]
-    },
-    {
-      "Route": "UniversityManagement.Web.styles.css",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\muux4wxhz0-e9owlwaked.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001824817518"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "547"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"b75kaoTJ5rOhLajiG3JS7H3JUFAgl+B4mwO5DCVoB8I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:14:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"0pe7NREDb95owzEqd3K2GiSU63JqYiBYxfX5y+bROdM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-0pe7NREDb95owzEqd3K2GiSU63JqYiBYxfX5y+bROdM="
-        }
-      ]
-    },
-    {
-      "Route": "UniversityManagement.Web.styles.css",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\scopedcss\\bundle\\UniversityManagement.Web.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1142"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0pe7NREDb95owzEqd3K2GiSU63JqYiBYxfX5y+bROdM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:14:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-0pe7NREDb95owzEqd3K2GiSU63JqYiBYxfX5y+bROdM="
-        }
-      ]
-    },
-    {
-      "Route": "UniversityManagement.Web.styles.css.gz",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\muux4wxhz0-e9owlwaked.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "547"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"b75kaoTJ5rOhLajiG3JS7H3JUFAgl+B4mwO5DCVoB8I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 25 May 2026 13:14:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-b75kaoTJ5rOhLajiG3JS7H3JUFAgl+B4mwO5DCVoB8I="
         }
       ]
     }

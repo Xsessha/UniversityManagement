@@ -1,0 +1,33 @@
+@model UniversityManagement.Core.Models.Schedule
+
+<h2>Create Lesson</h2>
+
+<form asp-action="CreateLesson" method="post">
+
+    <div class="form-group">
+        <label>Course</label>
+        <input asp-for="CourseId" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Teacher</label>
+        <input asp-for="TeacherId" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Lesson Type</label>
+        <select asp-for="LessonType" class="form-control">
+            <option>Lecture</option>
+            <option>Seminar</option>
+            <option>Laboratory</option>
+            <option>Practice</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Date</label>
+        <input asp-for="Date" type="datetime-local" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success mt-2">Save</button>
+</form>

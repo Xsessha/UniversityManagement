@@ -1,45 +1,21 @@
-using Microsoft.EntityFrameworkCore;
 using UniversityManagement.Core.Enums;
 using UniversityManagement.Core.Models;
-using UniversityManagement.Data.Context;
 
 namespace UniversityManagement.Services;
 
 public class AttendanceService
 {
-    private readonly UniversityDbContext? _context;
+    private readonly List<Attendance> _attendance = new();
 
-    public AttendanceService()
+    public void Mark(int studentId, AttendanceStatus status)
     {
+        _attendance.Add(new Attendance
+        {
+            Id = _attendance.Count + 1,
+            StudentId = studentId,
+            Status = status
+        });
     }
 
-    public AttendanceService(
-        UniversityDbContext context)
-    {
-        _context = context;
-    }
-
-    public async Task<List<Attendance>> GetAllAsync()
-    {
-        if (_context == null)
-            return new List<Attendance>();
-
-        return await _context.Attendances
-            .Include(x => x.Student)
-            .ToListAsync();
-    }
-
-    public double CalculateAttendancePercent(
-        Student student)
-    {
-        if (!student.Attendances.Any())
-            return 0;
-
-        var presentCount =
-            student.Attendances.Count(x =>
-                x.Status == AttendanceStatus.Present);
-
-        return (double)presentCount /
-               student.Attendances.Count * 100;
-    }
+    public List<Attendance> GetAll() => _attendance;
 }

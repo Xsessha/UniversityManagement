@@ -5,17 +5,15 @@ namespace UniversityManagement.Web.Controllers;
 
 public class NotificationsController : Controller
 {
-    private readonly NotificationService _notificationService;
+    private readonly NotificationService _service;
 
-    public NotificationsController(NotificationService notificationService)
+    public NotificationsController(NotificationService service)
     {
-        _notificationService = notificationService;
+        _service = service;
     }
 
-    public async Task<IActionResult> Index()
+    public IActionResult Index()
     {
-        var notifications = await _notificationService.GetAllAsync();
-
-        return View(notifications);
+        return View(new List<string>());
     }
 }

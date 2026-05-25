@@ -1,0 +1,12 @@
+@model IEnumerable<UniversityManagement.Core.Models.Student>
+
+<h2>Top Students</h2>
+
+<ol>
+@foreach (var s in Model)
+{
+    <li>
+        @s.FirstName @s.LastName — Rating: @s.Rating
+    </li>
+}
+</ol>
