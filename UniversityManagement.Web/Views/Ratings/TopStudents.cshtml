@@ -6,7 +6,9 @@
 @foreach (var s in Model)
 {
     <li>
-        @s.FirstName @s.LastName — Rating: @s.Rating
+        @s.FirstName @s.LastName - Rating: @s.Rating
     </li>
 }
 </ol>
+
+<a asp-action="Index" class="btn btn-secondary">Back</a>

@@ -1,10 +1,43 @@
 @model UniversityManagement.Core.Models.Teacher
 
-<h2>Edit</h2>
+@{
+    ViewData["Title"] = "Edit Teacher";
+}
 
-<form method="post">
-    <input name="FirstName" value="@Model.FirstName" />
-    <input name="LastName" value="@Model.LastName" />
-    <input name="Email" value="@Model.Email" />
-    <button type="submit">Save</button>
-</form>
+<h1 class="mb-4">✏️ Edit Teacher</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <form method="post" class="card p-4">
+            <input type="hidden" asp-for="Id" />
+            <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+            <div class="mb-3">
+                <label asp-for="FirstName" class="form-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="LastName" class="form-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label"></label>
+                <input asp-for="Email" type="email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Department" class="form-label"></label>
+                <input asp-for="Department" class="form-control" />
+                <span asp-validation-for="Department" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-warning">💾 Save Changes</button>
+            <a href="@Url.Action("Index")" class="btn btn-secondary">❌ Cancel</a>
+        </form>
+    </div>
+</div>

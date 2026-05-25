@@ -1,6 +1,25 @@
-@model UniversityManagement.Core.Models.Student
+@model UniversityManagement.Core.Models.Teacher
 
-<h2>Details</h2>
+@{
+    ViewData["Title"] = "Teacher Details";
+}
 
-<p>@Model.FirstName @Model.LastName</p>
-<p>@Model.Email</p>
+<h1 class="mb-4">👁️ Teacher Details</h1>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">@Model.FirstName @Model.LastName</h5>
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>Email:</strong> @Model.Email</p>
+                <p><strong>Department:</strong> @Model.Department</p>
+                <p><strong>Courses:</strong> @Model.Courses.Count</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-3">
+    <a href="@Url.Action("Edit", new { id = Model.Id })" class="btn btn-warning">✏️ Edit</a>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">⬅️ Back</a>
+</div>

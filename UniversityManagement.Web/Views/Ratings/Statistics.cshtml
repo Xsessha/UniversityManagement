@@ -1,7 +1,29 @@
-@model dynamic
+@model UniversityManagement.Web.ViewModels.RatingStatisticsViewModel
 
 <h2>Rating Statistics</h2>
 
-<p>Average Rating: <b>@Model.Average</b></p>
-<p>Max Rating: <b>@Model.Max</b></p>
-<p>Min Rating: <b>@Model.Min</b></p>
+<p>Average Rating: <b>@Model.AverageRating.ToString("0.##")</b></p>
+<p>Max Rating: <b>@Model.MaxRating.ToString("0.##")</b></p>
+<p>Min Rating: <b>@Model.MinRating.ToString("0.##")</b></p>
+
+<h3>Average rating by groups</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Group</th>
+            <th>Average rating</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var group in Model.AverageByGroup)
+    {
+        <tr>
+            <td>@group.Key</td>
+            <td>@group.Value.ToString("0.##")</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<a asp-action="Index" class="btn btn-secondary">Back</a>

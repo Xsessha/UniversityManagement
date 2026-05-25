@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"] = "Error";
+    int statusCode = (int?)ViewData["StatusCode"] ?? 0;
+}
+
+<div class="container mt-5">
+    <div class="alert alert-warning" role="alert">
+        @if (statusCode == 404)
+        {
+            <h1>🔍 Page Not Found (404)</h1>
+            <p class="mt-3">The page you're looking for doesn't exist.</p>
+        }
+        else if (statusCode == 500)
+        {
+            <h1>⚠️ Server Error (500)</h1>
+            <p class="mt-3">An internal server error occurred.</p>
+        }
+        else
+        {
+            <h1>⚠️ Error (Status: @statusCode)</h1>
+            <p class="mt-3">An error occurred while processing your request.</p>
+        }
+        
+        <a href="@Url.Action("Index")" class="btn btn-primary mt-3">🏠 Go Home</a>
+    </div>
+</div>

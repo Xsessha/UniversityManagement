@@ -1,11 +1,27 @@
 @model UniversityManagement.Core.Models.Course
 
-<h2>Course Details</h2>
+@{
+    ViewData["Title"] = "Course Details";
+}
 
-<div>
-    <p><b>Name:</b> @Model.Name</p>
-    <p><b>Credits:</b> @Model.Credits</p>
-    <p><b>Teacher:</b> @Model.Teacher?.FirstName @Model.Teacher?.LastName</p>
+<h1 class="mb-4">👁️ Course Details</h1>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Name</h5>
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>Description:</strong> @Model.Description</p>
+                <p><strong>Credits:</strong> @Model.Credits</p>
+                <p><strong>Teacher:</strong> @(Model.Teacher != null ? $"{Model.Teacher.FirstName} {Model.Teacher.LastName}" : "N/A")</p>
+                <p><strong>Groups:</strong> @Model.Groups.Count</p>
+                <p><strong>Lessons:</strong> @Model.Lessons.Count</p>
+            </div>
+        </div>
+    </div>
 </div>
 
-<a asp-action="Index">Back</a>
+<div class="mt-3">
+    <a href="@Url.Action("Edit", new { id = Model.Id })" class="btn btn-warning">✏️ Edit</a>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">⬅️ Back</a>
+</div>

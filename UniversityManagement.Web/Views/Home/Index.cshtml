@@ -2,6 +2,56 @@
     ViewData["Title"] = "Home";
 }
 
-<h1>University Management System</h1>
+<div class="jumbotron py-5 bg-light">
+    <div class="container text-center">
+        <h1 class="display-4">🏫 University Management System</h1>
+        <p class="lead mt-4">Complete management solution for students, teachers, and administrators</p>
+        
+        <div class="mt-5">
+            @if (!User.Identity?.IsAuthenticated ?? true)
+            {
+                <a href="@Url.Action("Login", "Account")" class="btn btn-primary btn-lg me-2">
+                    🔵 Login
+                </a>
+                <a href="@Url.Action("Register", "Account")" class="btn btn-success btn-lg">
+                    🟢 Register
+                </a>
+            }
+            else
+            {
+                <a href="@Url.Action("Index", "Dashboard")" class="btn btn-primary btn-lg">
+                    📊 Go to Dashboard
+                </a>
+            }
+        </div>
+    </div>
+</div>
 
-<p>Welcome to the system.</p>
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title">👨‍🎓 For Students</h5>
+                    <p class="card-text">Track your attendance, grades, ratings, and schedule</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title">👨‍🏫 For Teachers</h5>
+                    <p class="card-text">Manage courses, mark attendance, and view reports</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title">🛡 For Admins</h5>
+                    <p class="card-text">Complete system management and reporting</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

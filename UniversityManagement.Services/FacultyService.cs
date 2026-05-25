@@ -1,19 +1,43 @@
+using UniversityManagement.Core.Interfaces;
 using UniversityManagement.Core.Models;
 
 namespace UniversityManagement.Services;
 
 public class FacultyService
 {
-    private readonly List<Faculty> _faculties = new();
+    private readonly IRepository<Faculty> _repository;
 
-    public void Add(string name)
+    public FacultyService(IRepository<Faculty> repository)
     {
-        _faculties.Add(new Faculty
-        {
-            Id = _faculties.Count + 1,
-            Name = name
-        });
+        _repository = repository;
     }
 
-    public List<Faculty> GetAll() => _faculties;
+    public async Task<List<Faculty>> GetAllAsync()
+    {
+        return await _repository.GetAllAsync();
+    }
+
+    public async Task<Faculty?> GetByIdAsync(int id)
+    {
+        return await _repository.GetByIdAsync(id);
+    }
+
+    public async Task AddFacultyAsync(Faculty faculty)
+    {
+        await _repository.AddAsync(faculty);
+    }
+
+    public async Task UpdateFacultyAsync(Faculty faculty)
+    {
+        await _repository.UpdateAsync(faculty);
+    }
+
+    public async Task DeleteFacultyAsync(int id)
+    {
+        var faculty = await _repository.GetByIdAsync(id);
+        if (faculty != null)
+        {
+            await _repository.DeleteAsync(id);
+        }
+    }
 }

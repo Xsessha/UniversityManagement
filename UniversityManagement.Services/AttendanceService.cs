@@ -1,21 +1,44 @@
 using UniversityManagement.Core.Enums;
+using UniversityManagement.Core.Interfaces;
 using UniversityManagement.Core.Models;
 
 namespace UniversityManagement.Services;
 
 public class AttendanceService
 {
-    private readonly List<Attendance> _attendance = new();
+    private readonly IRepository<Attendance> _repository;
 
-    public void Mark(int studentId, AttendanceStatus status)
+    public AttendanceService(IRepository<Attendance> repository)
     {
-        _attendance.Add(new Attendance
-        {
-            Id = _attendance.Count + 1,
-            StudentId = studentId,
-            Status = status
-        });
+        _repository = repository;
     }
 
-    public List<Attendance> GetAll() => _attendance;
+    public async Task<List<Attendance>> GetAllAsync()
+    {
+        return await _repository.GetAllAsync();
+    }
+
+    public async Task<Attendance?> GetByIdAsync(int id)
+    {
+        return await _repository.GetByIdAsync(id);
+    }
+
+    public async Task MarkAttendanceAsync(Attendance attendance)
+    {
+        await _repository.AddAsync(attendance);
+    }
+
+    public async Task UpdateAttendanceAsync(Attendance attendance)
+    {
+        await _repository.UpdateAsync(attendance);
+    }
+
+    public async Task DeleteAttendanceAsync(int id)
+    {
+        var attendance = await _repository.GetByIdAsync(id);
+        if (attendance != null)
+        {
+            await _repository.DeleteAsync(id);
+        }
+    }
 }

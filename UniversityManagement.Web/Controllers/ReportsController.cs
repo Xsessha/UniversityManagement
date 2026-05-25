@@ -1,8 +1,11 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using UniversityManagement.Core.Models;
 using UniversityManagement.Services;
 
 namespace UniversityManagement.Web.Controllers;
 
+[Authorize]
 public class ReportsController : Controller
 {
     private readonly ReportService _service;
@@ -12,14 +15,41 @@ public class ReportsController : Controller
         _service = service;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        return View();
+        var reports = await _service.GetAllAsync();
+        return View(reports);
     }
 
-    public IActionResult StudentReport(int? id)
+    public IActionResult Create() => View();
+
+    [HttpPost]
+    public async Task<IActionResult> Create(Report report)
     {
-        // TODO: Retrieve student and generate report
-        return View();
+        if (ModelState.IsValid)
+        {
+            await _service.AddReportAsync(report);
+            return RedirectToAction(nameof(Index));
+        }
+        return View(report);
+    }
+
+    public async Task<IActionResult> Details(int id)
+    {
+        var report = await _service.GetByIdAsync(id);
+        return report == null ? NotFound() : View(report);
+    }
+
+    public async Task<IActionResult> Delete(int id)
+    {
+        var report = await _service.GetByIdAsync(id);
+        return report == null ? NotFound() : View(report);
+    }
+
+    [HttpPost, ActionName("Delete")]
+    public async Task<IActionResult> DeleteConfirmed(int id)
+    {
+        await _service.DeleteReportAsync(id);
+        return RedirectToAction(nameof(Index));
     }
 }

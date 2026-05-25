@@ -1,7 +1,42 @@
-<h2>Create Teacher</h2>
+@model UniversityManagement.Core.Models.Teacher
 
-<form method="post">
-    <input name="FullName" />
-    <input name="Department" />
-    <button>Save</button>
-</form>
+@{
+    ViewData["Title"] = "Create Teacher";
+}
+
+<h1 class="mb-4">➕ Add New Teacher</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <form method="post" class="card p-4">
+            <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+            <div class="mb-3">
+                <label asp-for="FirstName" class="form-label"></label>
+                <input asp-for="FirstName" class="form-control" placeholder="First Name" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="LastName" class="form-label"></label>
+                <input asp-for="LastName" class="form-control" placeholder="Last Name" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label"></label>
+                <input asp-for="Email" type="email" class="form-control" placeholder="Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Department" class="form-label"></label>
+                <input asp-for="Department" class="form-control" placeholder="Department" />
+                <span asp-validation-for="Department" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-success">✅ Create</button>
+            <a href="@Url.Action("Index")" class="btn btn-secondary">❌ Cancel</a>
+        </form>
+    </div>
+</div>

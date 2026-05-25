@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using UniversityManagement.Core.Models;
 using UniversityManagement.Services;
 
 namespace UniversityManagement.Web.Controllers;
 
+[Authorize]
 public class TeachersController : Controller
 {
     private readonly TeacherService _service;
@@ -13,17 +15,70 @@ public class TeachersController : Controller
         _service = service;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        return View(_service.GetAll());
+        var teachers = await _service.GetAllAsync();
+        return View(teachers);
     }
 
-    public IActionResult Create() => View();
+    public IActionResult Create()
+    {
+        return View();
+    }
 
     [HttpPost]
-    public IActionResult Create(Teacher teacher)
+    public async Task<IActionResult> Create(Teacher teacher)
     {
-        _service.Add(teacher.FirstName, teacher.LastName, teacher.Email, teacher.Department);
-        return RedirectToAction("Index");
+        if (ModelState.IsValid)
+        {
+            await _service.AddTeacherAsync(teacher);
+            return RedirectToAction(nameof(Index));
+        }
+        return View(teacher);
+    }
+
+    public async Task<IActionResult> Edit(int id)
+    {
+        var teacher = await _service.GetByIdAsync(id);
+        if (teacher == null)
+            return NotFound();
+        return View(teacher);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Edit(int id, Teacher teacher)
+    {
+        if (id != teacher.Id)
+            return NotFound();
+
+        if (ModelState.IsValid)
+        {
+            await _service.UpdateTeacherAsync(teacher);
+            return RedirectToAction(nameof(Index));
+        }
+        return View(teacher);
+    }
+
+    public async Task<IActionResult> Details(int id)
+    {
+        var teacher = await _service.GetByIdAsync(id);
+        if (teacher == null)
+            return NotFound();
+        return View(teacher);
+    }
+
+    public async Task<IActionResult> Delete(int id)
+    {
+        var teacher = await _service.GetByIdAsync(id);
+        if (teacher == null)
+            return NotFound();
+        return View(teacher);
+    }
+
+    [HttpPost, ActionName("Delete")]
+    public async Task<IActionResult> DeleteConfirmed(int id)
+    {
+        await _service.DeleteTeacherAsync(id);
+        return RedirectToAction(nameof(Index));
     }
 }

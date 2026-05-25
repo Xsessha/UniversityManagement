@@ -1,19 +1,43 @@
+using UniversityManagement.Core.Interfaces;
 using UniversityManagement.Core.Models;
 
 namespace UniversityManagement.Services;
 
 public class GroupService
 {
-    private readonly List<Group> _groups = new();
+    private readonly IRepository<Group> _repository;
 
-    public void Add(string name)
+    public GroupService(IRepository<Group> repository)
     {
-        _groups.Add(new Group
-        {
-            Id = _groups.Count + 1,
-            Name = name
-        });
+        _repository = repository;
     }
 
-    public List<Group> GetAll() => _groups;
+    public async Task<List<Group>> GetAllAsync()
+    {
+        return await _repository.GetAllAsync();
+    }
+
+    public async Task<Group?> GetByIdAsync(int id)
+    {
+        return await _repository.GetByIdAsync(id);
+    }
+
+    public async Task AddGroupAsync(Group group)
+    {
+        await _repository.AddAsync(group);
+    }
+
+    public async Task UpdateGroupAsync(Group group)
+    {
+        await _repository.UpdateAsync(group);
+    }
+
+    public async Task DeleteGroupAsync(int id)
+    {
+        var group = await _repository.GetByIdAsync(id);
+        if (group != null)
+        {
+            await _repository.DeleteAsync(id);
+        }
+    }
 }

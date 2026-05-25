@@ -10,3 +10,6 @@ public class AttendanceViewModel
     public string Status { get; set; } = "";
     public DateTime Date { get; set; }
 }
+
+
+

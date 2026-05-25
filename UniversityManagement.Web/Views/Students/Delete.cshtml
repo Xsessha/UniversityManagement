@@ -1,9 +1,24 @@
 @model UniversityManagement.Core.Models.Student
 
-<h2>Delete Student</h2>
+@{
+    ViewData["Title"] = "Delete Student";
+}
 
-<p>Are you sure you want to delete @Model.FirstName @Model.LastName?</p>
+<h1 class="mb-4">🗑️ Delete Student</h1>
 
-<form method="post">
-    <button type="submit">Delete</button>
+<div class="alert alert-warning" role="alert">
+    <strong>Are you sure you want to delete this student?</strong>
+</div>
+
+<div class="card mb-4">
+    <div class="card-body">
+        <p><strong>Name:</strong> @Model.FirstName @Model.LastName</p>
+        <p><strong>Email:</strong> @Model.Email</p>
+        <p><strong>Status:</strong> @Model.Status</p>
+    </div>
+</div>
+
+<form method="post" asp-action="DeleteConfirmed" asp-route-id="@Model.Id" style="display:inline;">
+    <button type="submit" class="btn btn-danger">🗑️ Confirm Delete</button>
 </form>
+<a href="@Url.Action("Index")" class="btn btn-secondary">❌ Cancel</a>

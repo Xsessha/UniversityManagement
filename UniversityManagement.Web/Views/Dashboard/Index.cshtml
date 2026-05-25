@@ -1,9 +1,122 @@
+@using UniversityManagement.Services
+
+@model DashboardViewModel
+
 @{
     ViewData["Title"] = "Dashboard";
 }
 
-<h2>Dashboard</h2>
+<div class="container-fluid mt-5">
+    <h1 class="mb-4">📊 University Dashboard</h1>
 
-<div>
-    <p>Students, Teachers, Courses overview</p>
+    <!-- Statistics Cards -->
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <div class="card bg-primary text-white">
+                <div class="card-body text-center">
+                    <h5 class="card-title">👨‍🎓 Students</h5>
+                    <h2>@Model.TotalStudents</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-success text-white">
+                <div class="card-body text-center">
+                    <h5 class="card-title">👨‍🏫 Teachers</h5>
+                    <h2>@Model.TotalTeachers</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-info text-white">
+                <div class="card-body text-center">
+                    <h5 class="card-title">📚 Courses</h5>
+                    <h2>@Model.TotalCourses</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-warning text-white">
+                <div class="card-body text-center">
+                    <h5 class="card-title">📅 Today's Lessons</h5>
+                    <h2>@Model.TodayLessons.Count</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="row mb-4">
+        <div class="col-md-2">
+            <a href="@Url.Action("Index", "Students")" class="btn btn-primary w-100">👨‍🎓 Students</a>
+        </div>
+        <div class="col-md-2">
+            <a href="@Url.Action("Index", "Teachers")" class="btn btn-success w-100">👨‍🏫 Teachers</a>
+        </div>
+        <div class="col-md-2">
+            <a href="@Url.Action("Index", "Courses")" class="btn btn-info w-100">📚 Courses</a>
+        </div>
+        <div class="col-md-2">
+            <a href="@Url.Action("Index", "Attendance")" class="btn btn-warning w-100">📋 Attendance</a>
+        </div>
+        <div class="col-md-2">
+            <a href="@Url.Action("Index", "Ratings")" class="btn btn-danger w-100">⭐ Ratings</a>
+        </div>
+        <div class="col-md-2">
+            <a href="@Url.Action("Index", "Reports")" class="btn btn-secondary w-100">📄 Reports</a>
+        </div>
+    </div>
+
+    <!-- Today's Lessons -->
+    @if (Model.TodayLessons.Count > 0)
+    {
+        <div class="card mb-4">
+            <div class="card-header bg-secondary text-white">
+                <h5 class="mb-0">📅 Today's Lessons</h5>
+            </div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Type</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var lesson in Model.TodayLessons)
+                        {
+                            <tr>
+                                <td>@lesson.Topic</td>
+                                <td>@lesson.Type</td>
+                                <td>@lesson.Date.ToString("HH:mm")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+
+    <!-- Recent Notifications -->
+    @if (Model.RecentNotifications.Count > 0)
+    {
+        <div class="card">
+            <div class="card-header bg-info text-white">
+                <h5 class="mb-0">🔔 Recent Notifications</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    @foreach (var notification in Model.RecentNotifications)
+                    {
+                        <li class="list-group-item">
+                            <strong>@notification.Title</strong><br>
+                            <small>@notification.Message</small><br>
+                            <tiny class="text-muted">@notification.CreatedAt.ToString("g")</tiny>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    }
 </div>

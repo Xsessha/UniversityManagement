@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using UniversityManagement.Core.Models;
 using UniversityManagement.Services;
 
 namespace UniversityManagement.Web.Controllers;
 
+[Authorize]
 public class StudentsController : Controller
 {
     private readonly StudentService _service;
@@ -13,23 +15,70 @@ public class StudentsController : Controller
         _service = service;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        return View(_service.GetAll());
+        var students = await _service.GetAllAsync();
+        return View(students);
     }
 
-    public IActionResult Create() => View();
+    public IActionResult Create()
+    {
+        return View();
+    }
 
     [HttpPost]
-    public IActionResult Create(Student student)
+    public async Task<IActionResult> Create(Student student)
     {
-        _service.AddStudent(student.FirstName, student.LastName, student.Email);
-        return RedirectToAction("Index");
+        if (ModelState.IsValid)
+        {
+            await _service.AddStudentAsync(student);
+            return RedirectToAction(nameof(Index));
+        }
+        return View(student);
     }
 
-    public IActionResult Delete(int id)
+    public async Task<IActionResult> Edit(int id)
     {
-        // TODO: Implement delete functionality in StudentService
-        return RedirectToAction("Index");
+        var student = await _service.GetByIdAsync(id);
+        if (student == null)
+            return NotFound();
+        return View(student);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Edit(int id, Student student)
+    {
+        if (id != student.Id)
+            return NotFound();
+
+        if (ModelState.IsValid)
+        {
+            await _service.UpdateStudentAsync(student);
+            return RedirectToAction(nameof(Index));
+        }
+        return View(student);
+    }
+
+    public async Task<IActionResult> Details(int id)
+    {
+        var student = await _service.GetByIdAsync(id);
+        if (student == null)
+            return NotFound();
+        return View(student);
+    }
+
+    public async Task<IActionResult> Delete(int id)
+    {
+        var student = await _service.GetByIdAsync(id);
+        if (student == null)
+            return NotFound();
+        return View(student);
+    }
+
+    [HttpPost, ActionName("Delete")]
+    public async Task<IActionResult> DeleteConfirmed(int id)
+    {
+        await _service.DeleteStudentAsync(id);
+        return RedirectToAction(nameof(Index));
     }
 }

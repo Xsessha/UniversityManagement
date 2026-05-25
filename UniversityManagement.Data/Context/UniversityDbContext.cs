@@ -1,9 +1,10 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using UniversityManagement.Core.Models;
 
 namespace UniversityManagement.Data.Context;
 
-public class UniversityDbContext : DbContext
+public class UniversityDbContext : IdentityDbContext<ApplicationUser>
 {
     public UniversityDbContext(DbContextOptions<UniversityDbContext> options)
         : base(options)
@@ -21,4 +22,11 @@ public class UniversityDbContext : DbContext
     public DbSet<Schedule> Schedules => Set<Schedule>();
     public DbSet<Notification> Notifications => Set<Notification>();
     public DbSet<Report> Reports => Set<Report>();
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(UniversityDbContext).Assembly);
+    }
 }
