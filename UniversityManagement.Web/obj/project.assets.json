@@ -1,0 +1,143 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "UniversityManagement.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/UniversityManagement.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UniversityManagement.Core.dll": {}
+        }
+      },
+      "UniversityManagement.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/UniversityManagement.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UniversityManagement.Data.dll": {}
+        }
+      },
+      "UniversityManagement.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "UniversityManagement.Core": "1.0.0",
+          "UniversityManagement.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UniversityManagement.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UniversityManagement.Services.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UniversityManagement.Core/1.0.0": {
+      "type": "project",
+      "path": "../UniversityManagement.Core/UniversityManagement.Core.csproj",
+      "msbuildProject": "../UniversityManagement.Core/UniversityManagement.Core.csproj"
+    },
+    "UniversityManagement.Data/1.0.0": {
+      "type": "project",
+      "path": "../UniversityManagement.Data/UniversityManagement.Data.csproj",
+      "msbuildProject": "../UniversityManagement.Data/UniversityManagement.Data.csproj"
+    },
+    "UniversityManagement.Services/1.0.0": {
+      "type": "project",
+      "path": "../UniversityManagement.Services/UniversityManagement.Services.csproj",
+      "msbuildProject": "../UniversityManagement.Services/UniversityManagement.Services.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "UniversityManagement.Core >= 1.0.0",
+      "UniversityManagement.Services >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Lenovo Yoga\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\UniversityManagement.Web.csproj",
+      "projectName": "UniversityManagement.Web",
+      "projectPath": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\UniversityManagement.Web.csproj",
+      "packagesPath": "C:\\Users\\Lenovo Yoga\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Lenovo Yoga\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Core\\UniversityManagement.Core.csproj": {
+              "projectPath": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Core\\UniversityManagement.Core.csproj"
+            },
+            "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Services\\UniversityManagement.Services.csproj": {
+              "projectPath": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Services\\UniversityManagement.Services.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

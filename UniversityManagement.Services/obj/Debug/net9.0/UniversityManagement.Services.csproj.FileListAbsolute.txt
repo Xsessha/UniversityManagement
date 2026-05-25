@@ -1,0 +1,17 @@
+C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\bin\Debug\net9.0\UniversityManagement.Services.deps.json
+C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\bin\Debug\net9.0\UniversityManagement.Services.dll
+C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\bin\Debug\net9.0\UniversityManagement.Services.pdb
+C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\bin\Debug\net9.0\UniversityManagement.Core.dll
+C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\bin\Debug\net9.0\UniversityManagement.Data.dll
+C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\bin\Debug\net9.0\UniversityManagement.Data.pdb
+C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\bin\Debug\net9.0\UniversityManagement.Core.pdb
+C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\obj\Debug\net9.0\UniversityManagement.Services.csproj.AssemblyReference.cache
+C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\obj\Debug\net9.0\UniversityManagement.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\obj\Debug\net9.0\UniversityManagement.Services.AssemblyInfoInputs.cache
+C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\obj\Debug\net9.0\UniversityManagement.Services.AssemblyInfo.cs
+C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\obj\Debug\net9.0\UniversityManagement.Services.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\obj\Debug\net9.0\Universi.5EE4208E.Up2Date
+C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\obj\Debug\net9.0\UniversityManagement.Services.dll
+C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\obj\Debug\net9.0\refint\UniversityManagement.Services.dll
+C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\obj\Debug\net9.0\UniversityManagement.Services.pdb
+C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\obj\Debug\net9.0\ref\UniversityManagement.Services.dll

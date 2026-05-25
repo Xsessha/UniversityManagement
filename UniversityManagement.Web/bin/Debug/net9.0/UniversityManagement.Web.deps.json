@@ -1,0 +1,70 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "UniversityManagement.Web/1.0.0": {
+        "dependencies": {
+          "UniversityManagement.Core": "1.0.0",
+          "UniversityManagement.Services": "1.0.0"
+        },
+        "runtime": {
+          "UniversityManagement.Web.dll": {}
+        }
+      },
+      "UniversityManagement.Core/1.0.0": {
+        "runtime": {
+          "UniversityManagement.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "UniversityManagement.Data/1.0.0": {
+        "runtime": {
+          "UniversityManagement.Data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "UniversityManagement.Services/1.0.0": {
+        "dependencies": {
+          "UniversityManagement.Core": "1.0.0",
+          "UniversityManagement.Data": "1.0.0"
+        },
+        "runtime": {
+          "UniversityManagement.Services.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UniversityManagement.Web/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UniversityManagement.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UniversityManagement.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UniversityManagement.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
