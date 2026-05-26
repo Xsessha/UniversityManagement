@@ -1,122 +1,156 @@
-@using UniversityManagement.Services
-
-@model DashboardViewModel
+@model UniversityManagement.Services.DashboardViewModel
 
 @{
     ViewData["Title"] = "Dashboard";
 }
 
-<div class="container-fluid mt-5">
-    <h1 class="mb-4">📊 University Dashboard</h1>
+<div class="lumina-page-header">
+    <div>
+        <h1><span class="text-gradient">University Dashboard</span></h1>
+        <p>Overview of students, teachers, courses, schedule, and recent campus activity.</p>
+    </div>
+    <div class="lumina-actions">
+        <a href="@Url.Action("Index", "Reports")" class="btn btn-outline-primary">
+            <i data-lucide="file-bar-chart-2"></i>
+            Reports
+        </a>
+        <a href="@Url.Action("Index", "Schedule")" class="btn btn-primary">
+            <i data-lucide="calendar"></i>
+            Schedule
+        </a>
+    </div>
+</div>
 
-    <!-- Statistics Cards -->
-    <div class="row mb-4">
-        <div class="col-md-3">
-            <div class="card bg-primary text-white">
-                <div class="card-body text-center">
-                    <h5 class="card-title">👨‍🎓 Students</h5>
-                    <h2>@Model.TotalStudents</h2>
-                </div>
+<section class="lumina-stat-grid">
+    <article class="lumina-stat-card">
+        <span class="lumina-stat-icon"><i data-lucide="users"></i></span>
+        <strong>@Model.TotalStudents</strong>
+        <span>Total students</span>
+    </article>
+    <article class="lumina-stat-card">
+        <span class="lumina-stat-icon"><i data-lucide="graduation-cap"></i></span>
+        <strong>@Model.TotalTeachers</strong>
+        <span>Active teachers</span>
+    </article>
+    <article class="lumina-stat-card">
+        <span class="lumina-stat-icon"><i data-lucide="book-open"></i></span>
+        <strong>@Model.TotalCourses</strong>
+        <span>Open courses</span>
+    </article>
+    <article class="lumina-stat-card">
+        <span class="lumina-stat-icon"><i data-lucide="calendar-check-2"></i></span>
+        <strong>@Model.TodayLessons.Count</strong>
+        <span>Lessons today</span>
+    </article>
+</section>
+
+<section class="lumina-dashboard-grid">
+    <div class="lumina-panel">
+        <div class="lumina-panel-header">
+            <div>
+                <span>Workspace</span>
+                <h2>Quick access</h2>
             </div>
+            <span>@DateTime.Today.ToString("MMM dd, yyyy")</span>
         </div>
-        <div class="col-md-3">
-            <div class="card bg-success text-white">
-                <div class="card-body text-center">
-                    <h5 class="card-title">👨‍🏫 Teachers</h5>
-                    <h2>@Model.TotalTeachers</h2>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card bg-info text-white">
-                <div class="card-body text-center">
-                    <h5 class="card-title">📚 Courses</h5>
-                    <h2>@Model.TotalCourses</h2>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card bg-warning text-white">
-                <div class="card-body text-center">
-                    <h5 class="card-title">📅 Today's Lessons</h5>
-                    <h2>@Model.TodayLessons.Count</h2>
-                </div>
-            </div>
+        <div class="lumina-quick-grid">
+            <a href="@Url.Action("Index", "Students")" class="lumina-quick-link">
+                <i data-lucide="users"></i>
+                <strong>Students</strong>
+            </a>
+            <a href="@Url.Action("Index", "Teachers")" class="lumina-quick-link">
+                <i data-lucide="graduation-cap"></i>
+                <strong>Teachers</strong>
+            </a>
+            <a href="@Url.Action("Index", "Courses")" class="lumina-quick-link">
+                <i data-lucide="book-open"></i>
+                <strong>Courses</strong>
+            </a>
+            <a href="@Url.Action("Index", "Attendance")" class="lumina-quick-link">
+                <i data-lucide="clipboard-check"></i>
+                <strong>Attendance</strong>
+            </a>
+            <a href="@Url.Action("Index", "Ratings")" class="lumina-quick-link">
+                <i data-lucide="trophy"></i>
+                <strong>Ratings</strong>
+            </a>
+            <a href="@Url.Action("Index", "Reports")" class="lumina-quick-link">
+                <i data-lucide="file-text"></i>
+                <strong>Reports</strong>
+            </a>
         </div>
     </div>
 
-    <!-- Navigation Buttons -->
-    <div class="row mb-4">
-        <div class="col-md-2">
-            <a href="@Url.Action("Index", "Students")" class="btn btn-primary w-100">👨‍🎓 Students</a>
+    <div class="lumina-panel">
+        <div class="lumina-panel-header">
+            <div>
+                <span>Notifications</span>
+                <h2>Recent updates</h2>
+            </div>
+            <a href="@Url.Action("Index", "Notifications")" class="btn btn-outline-primary btn-sm">View all</a>
         </div>
-        <div class="col-md-2">
-            <a href="@Url.Action("Index", "Teachers")" class="btn btn-success w-100">👨‍🏫 Teachers</a>
-        </div>
-        <div class="col-md-2">
-            <a href="@Url.Action("Index", "Courses")" class="btn btn-info w-100">📚 Courses</a>
-        </div>
-        <div class="col-md-2">
-            <a href="@Url.Action("Index", "Attendance")" class="btn btn-warning w-100">📋 Attendance</a>
-        </div>
-        <div class="col-md-2">
-            <a href="@Url.Action("Index", "Ratings")" class="btn btn-danger w-100">⭐ Ratings</a>
-        </div>
-        <div class="col-md-2">
-            <a href="@Url.Action("Index", "Reports")" class="btn btn-secondary w-100">📄 Reports</a>
+        <div class="lumina-list">
+            @if (Model.RecentNotifications.Count > 0)
+            {
+                @foreach (var notification in Model.RecentNotifications)
+                {
+                    <div class="lumina-list-item">
+                        <strong>@notification.Title</strong>
+                        <small>@notification.Message</small><br />
+                        <small>@notification.CreatedAt.ToString("g")</small>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="lumina-list-item">
+                    <strong>No recent notifications</strong>
+                    <small>New campus updates will appear here.</small>
+                </div>
+            }
         </div>
     </div>
+</section>
 
-    <!-- Today's Lessons -->
+<section class="lumina-panel mt-3">
+    <div class="lumina-panel-header">
+        <div>
+            <span>Today</span>
+            <h2>Lessons</h2>
+        </div>
+        <span>@Model.TodayLessons.Count scheduled</span>
+    </div>
     @if (Model.TodayLessons.Count > 0)
     {
-        <div class="card mb-4">
-            <div class="card-header bg-secondary text-white">
-                <h5 class="mb-0">📅 Today's Lessons</h5>
-            </div>
-            <div class="card-body">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Course</th>
-                            <th>Type</th>
-                            <th>Time</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var lesson in Model.TodayLessons)
-                        {
-                            <tr>
-                                <td>@lesson.Topic</td>
-                                <td>@lesson.Type</td>
-                                <td>@lesson.Date.ToString("HH:mm")</td>
-                            </tr>
-                        }
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    }
-
-    <!-- Recent Notifications -->
-    @if (Model.RecentNotifications.Count > 0)
-    {
-        <div class="card">
-            <div class="card-header bg-info text-white">
-                <h5 class="mb-0">🔔 Recent Notifications</h5>
-            </div>
-            <div class="card-body">
-                <ul class="list-group">
-                    @foreach (var notification in Model.RecentNotifications)
+        <div class="table-responsive border-0 rounded-0 shadow-none">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Type</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var lesson in Model.TodayLessons)
                     {
-                        <li class="list-group-item">
-                            <strong>@notification.Title</strong><br>
-                            <small>@notification.Message</small><br>
-                            <tiny class="text-muted">@notification.CreatedAt.ToString("g")</tiny>
-                        </li>
+                        <tr>
+                            <td>@lesson.Topic</td>
+                            <td><span class="badge bg-info">@lesson.Type</span></td>
+                            <td>@lesson.Date.ToString("HH:mm")</td>
+                        </tr>
                     }
-                </ul>
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="lumina-list">
+            <div class="lumina-list-item">
+                <strong>No lessons scheduled today</strong>
+                <small>The schedule is clear for now.</small>
             </div>
         </div>
     }
-</div>
+</section>

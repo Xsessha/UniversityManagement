@@ -1,57 +1,73 @@
-﻿@{
+@{
     ViewData["Title"] = "Home";
 }
 
-<div class="jumbotron py-5 bg-light">
-    <div class="container text-center">
-        <h1 class="display-4">🏫 University Management System</h1>
-        <p class="lead mt-4">Complete management solution for students, teachers, and administrators</p>
-        
-        <div class="mt-5">
-            @if (!User.Identity?.IsAuthenticated ?? true)
-            {
-                <a href="@Url.Action("Login", "Account")" class="btn btn-primary btn-lg me-2">
-                    🔵 Login
-                </a>
-                <a href="@Url.Action("Register", "Account")" class="btn btn-success btn-lg">
-                    🟢 Register
-                </a>
-            }
-            else
-            {
-                <a href="@Url.Action("Index", "Dashboard")" class="btn btn-primary btn-lg">
-                    📊 Go to Dashboard
-                </a>
-            }
+<section class="jumbotron py-5 px-4">
+    <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+            <p class="text-uppercase fw-bold text-muted mb-2">Lumina Campus</p>
+            <h1 class="display-4 text-gradient">University Management System</h1>
+            <p class="lead mt-3">A focused workspace for students, teachers, schedules, reports, ratings, and campus operations.</p>
+            <div class="mt-4 d-flex flex-wrap gap-2">
+                @if (!(User.Identity?.IsAuthenticated ?? false))
+                {
+                    <a href="@Url.Action("Login", "Account")" class="btn btn-primary btn-lg">Login</a>
+                    <a href="@Url.Action("Register", "Account")" class="btn btn-outline-primary btn-lg">Register</a>
+                }
+                else
+                {
+                    <a href="@Url.Action("Index", "Dashboard")" class="btn btn-primary btn-lg">Go to Dashboard</a>
+                }
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="glass-card p-4">
+                <div class="lumina-stat-grid" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+                    <div class="lumina-list-item">
+                        <strong>Students</strong>
+                        <small>Attendance, grades, ratings</small>
+                    </div>
+                    <div class="lumina-list-item">
+                        <strong>Teachers</strong>
+                        <small>Courses, lessons, reports</small>
+                    </div>
+                    <div class="lumina-list-item">
+                        <strong>Schedule</strong>
+                        <small>Daily academic planning</small>
+                    </div>
+                    <div class="lumina-list-item">
+                        <strong>Analytics</strong>
+                        <small>Reports and performance</small>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</section>
 
-<div class="container my-5">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body text-center">
-                    <h5 class="card-title">👨‍🎓 For Students</h5>
-                    <p class="card-text">Track your attendance, grades, ratings, and schedule</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body text-center">
-                    <h5 class="card-title">👨‍🏫 For Teachers</h5>
-                    <p class="card-text">Manage courses, mark attendance, and view reports</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body text-center">
-                    <h5 class="card-title">🛡 For Admins</h5>
-                    <p class="card-text">Complete system management and reporting</p>
-                </div>
+<section class="row g-3 mt-4">
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">For Students</h5>
+                <p class="card-text">Track attendance, grades, ratings, and daily schedule from one workspace.</p>
             </div>
         </div>
     </div>
-</div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">For Teachers</h5>
+                <p class="card-text">Manage courses, mark attendance, and review reports with a clean interface.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">For Admins</h5>
+                <p class="card-text">Coordinate university data, notifications, schedules, and performance insights.</p>
+            </div>
+        </div>
+    </div>
+</section>

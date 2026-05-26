@@ -1,38 +1,68 @@
-<div class="p-3">
-    <h5 class="mb-4">Menu</h5>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item border-0">
-            <a href="@Url.Action("Index", "Dashboard")" class="text-decoration-none">📊 Dashboard</a>
-        </li>
-        <li class="list-group-item border-0">
-            <a href="@Url.Action("Index", "Students")" class="text-decoration-none">👨‍🎓 Students</a>
-        </li>
-        <li class="list-group-item border-0">
-            <a href="@Url.Action("Index", "Teachers")" class="text-decoration-none">👨‍🏫 Teachers</a>
-        </li>
-        <li class="list-group-item border-0">
-            <a href="@Url.Action("Index", "Courses")" class="text-decoration-none">📚 Courses</a>
-        </li>
-        <li class="list-group-item border-0">
-            <a href="@Url.Action("Index", "Faculties")" class="text-decoration-none">🏢 Faculties</a>
-        </li>
-        <li class="list-group-item border-0">
-            <a href="@Url.Action("Index", "Groups")" class="text-decoration-none">👥 Groups</a>
-        </li>
-        <li class="list-group-item border-0">
-            <a href="@Url.Action("Index", "Attendance")" class="text-decoration-none">📋 Attendance</a>
-        </li>
-        <li class="list-group-item border-0">
-            <a href="@Url.Action("Index", "Ratings")" class="text-decoration-none">⭐ Ratings</a>
-        </li>
-        <li class="list-group-item border-0">
-            <a href="@Url.Action("Index", "Schedule")" class="text-decoration-none">📅 Schedule</a>
-        </li>
-        <li class="list-group-item border-0">
-            <a href="@Url.Action("Index", "Notifications")" class="text-decoration-none">🔔 Notifications</a>
-        </li>
-        <li class="list-group-item border-0">
-            <a href="@Url.Action("Index", "Reports")" class="text-decoration-none">📄 Reports</a>
-        </li>
-    </ul>
-</div>
+@{
+    var currentController = ViewContext.RouteData.Values["controller"]?.ToString() ?? "";
+    string Active(string controller) => string.Equals(currentController, controller, StringComparison.OrdinalIgnoreCase) ? " active" : "";
+}
+
+<aside class="lumina-sidebar" id="luminaSidebar">
+    <a class="lumina-brand" href="@Url.Action("Index", "Dashboard")">
+        <span class="lumina-brand-mark"><i data-lucide="sparkles"></i></span>
+        <span>
+            <strong>LUMINA</strong>
+            <small>University ERP</small>
+        </span>
+    </a>
+
+    <section class="lumina-semester-card">
+        <div>
+            <span class="lumina-pulse"></span>
+            Spring Semester 2026
+        </div>
+        <p>Week 11 of 16 - 68% complete</p>
+        <span class="lumina-progress"><span></span></span>
+    </section>
+
+    <nav class="lumina-sidebar-nav" aria-label="Main navigation">
+        <a class="lumina-nav-link@(Active("Dashboard"))" href="@Url.Action("Index", "Dashboard")">
+            <i data-lucide="layout-dashboard"></i><span>Dashboard</span>
+        </a>
+        <a class="lumina-nav-link@(Active("Students"))" href="@Url.Action("Index", "Students")">
+            <i data-lucide="users"></i><span>Students</span>
+        </a>
+        <a class="lumina-nav-link@(Active("Teachers"))" href="@Url.Action("Index", "Teachers")">
+            <i data-lucide="graduation-cap"></i><span>Teachers</span>
+        </a>
+        <a class="lumina-nav-link@(Active("Courses"))" href="@Url.Action("Index", "Courses")">
+            <i data-lucide="book-open"></i><span>Courses</span>
+        </a>
+        <a class="lumina-nav-link@(Active("Faculties"))" href="@Url.Action("Index", "Faculties")">
+            <i data-lucide="building-2"></i><span>Faculties</span>
+        </a>
+        <a class="lumina-nav-link@(Active("Groups"))" href="@Url.Action("Index", "Groups")">
+            <i data-lucide="layers"></i><span>Groups</span>
+        </a>
+        <a class="lumina-nav-link@(Active("Attendance"))" href="@Url.Action("Index", "Attendance")">
+            <i data-lucide="calendar-check-2"></i><span>Attendance</span>
+        </a>
+        <a class="lumina-nav-link@(Active("Ratings"))" href="@Url.Action("Index", "Ratings")">
+            <i data-lucide="trophy"></i><span>Ratings</span>
+        </a>
+        <a class="lumina-nav-link@(Active("Schedule"))" href="@Url.Action("Index", "Schedule")">
+            <i data-lucide="calendar"></i><span>Schedule</span>
+        </a>
+        <a class="lumina-nav-link@(Active("Notifications"))" href="@Url.Action("Index", "Notifications")">
+            <i data-lucide="bell"></i><span>Notifications</span><em>8</em>
+        </a>
+        <a class="lumina-nav-link@(Active("Reports"))" href="@Url.Action("Index", "Reports")">
+            <i data-lucide="file-bar-chart-2"></i><span>Reports</span>
+        </a>
+    </nav>
+
+    <div class="lumina-sidebar-user">
+        <span class="lumina-avatar">UM</span>
+        <span>
+            <strong>@(User.Identity?.Name ?? "Campus User")</strong>
+            <small>University workspace</small>
+        </span>
+    </div>
+</aside>
+<button type="button" class="lumina-sidebar-backdrop" data-lumina-close-sidebar aria-label="Close navigation"></button>

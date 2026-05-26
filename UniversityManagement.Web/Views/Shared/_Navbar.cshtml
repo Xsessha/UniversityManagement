@@ -1,32 +1,67 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="@Url.Action("Index", "Home")">🏫 University System</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                @if (User.Identity?.IsAuthenticated ?? false)
-                {
-                    <li class="nav-item">
-                        <span class="nav-link">👤 @User.Identity.Name</span>
-                    </li>
-                    <li class="nav-item">
-                        <form method="post" action="@Url.Action("Logout", "Account")" style="display:inline;">
-                            <button type="submit" class="btn btn-outline-light btn-sm">🔐 Logout</button>
-                        </form>
-                    </li>
-                }
-                else
-                {
-                    <li class="nav-item">
-                        <a class="nav-link" href="@Url.Action("Login", "Account")">🔵 Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="@Url.Action("Register", "Account")">🟢 Register</a>
-                    </li>
-                }
-            </ul>
-        </div>
+@{
+    var title = ViewData["Title"]?.ToString() ?? "Dashboard";
+    var isAuthenticated = User.Identity?.IsAuthenticated ?? false;
+}
+
+<header class="lumina-topbar">
+    <div class="lumina-topbar-inner">
+        @if (isAuthenticated)
+        {
+            <button type="button" class="lumina-icon-button lumina-menu-button" data-lumina-toggle-sidebar aria-label="Open navigation">
+                <i data-lucide="menu"></i>
+            </button>
+            <nav class="lumina-crumb" aria-label="Breadcrumb">
+                <span>Lumina</span>
+                <i data-lucide="chevron-right"></i>
+                <strong>@title</strong>
+            </nav>
+        }
+        else
+        {
+            <a class="lumina-brand lumina-brand-horizontal" href="@Url.Action("Index", "Home")">
+                <span class="lumina-brand-mark"><i data-lucide="sparkles"></i></span>
+                <span>
+                    <strong>LUMINA</strong>
+                    <small>University ERP</small>
+                </span>
+            </a>
+        }
+
+        <div class="lumina-topbar-spacer"></div>
+
+        @if (isAuthenticated)
+        {
+            <label class="lumina-search">
+                <i data-lucide="search"></i>
+                <input type="search" placeholder="Search campus records" aria-label="Search campus records" />
+            </label>
+            <button type="button" class="lumina-icon-button" data-theme-toggle aria-label="Toggle theme">
+                <i data-lucide="sun" class="theme-icon-light"></i>
+                <i data-lucide="moon" class="theme-icon-dark"></i>
+            </button>
+            <a class="lumina-icon-button lumina-notification-button" href="@Url.Action("Index", "Notifications")" aria-label="Notifications">
+                <i data-lucide="bell"></i>
+                <span></span>
+            </a>
+            <div class="lumina-user-chip">
+                <span class="lumina-avatar">UM</span>
+                <span>@User.Identity?.Name</span>
+            </div>
+            <form method="post" action="@Url.Action("Logout", "Account")">
+                <button type="submit" class="btn btn-outline-light btn-sm lumina-logout">
+                    <i data-lucide="log-out"></i>
+                    Logout
+                </button>
+            </form>
+        }
+        else
+        {
+            <button type="button" class="lumina-icon-button" data-theme-toggle aria-label="Toggle theme">
+                <i data-lucide="sun" class="theme-icon-light"></i>
+                <i data-lucide="moon" class="theme-icon-dark"></i>
+            </button>
+            <a class="btn btn-outline-light btn-sm" href="@Url.Action("Login", "Account")">Login</a>
+            <a class="btn btn-primary btn-sm" href="@Url.Action("Register", "Account")">Register</a>
+        }
     </div>
-</nav>
+</header>
