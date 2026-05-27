@@ -1,30 +1,67 @@
 @model UniversityManagement.Core.Models.Attendance
+@using UniversityManagement.Core.Enums
 
-<h2>Mark Attendance</h2>
+@{
+    ViewData["Title"] = Model?.Id > 0 ? "Edit Attendance" : "Mark Attendance";
+    var students = ViewBag.Students as List<UniversityManagement.Core.Models.Student> ?? new();
+    var lessons = ViewBag.Lessons as List<UniversityManagement.Core.Models.Lesson> ?? new();
+    var statuses = ViewBag.Statuses as AttendanceStatus[] ?? Enum.GetValues<AttendanceStatus>();
+    var action = Model?.Id > 0 ? "Edit" : "MarkAttendance";
+}
 
-<form asp-action="MarkAttendance" method="post">
+<h1>@ViewData["Title"]</h1>
 
-    <div>
-        <label>Student</label>
-        <input asp-for="StudentId" class="form-control"/>
+<div class="row">
+    <div class="col-lg-7">
+        <form action="@Url.Action(action, "Attendance", Model?.Id > 0 ? new { id = Model.Id } : null)" method="post" class="card p-4">
+            @if (Model?.Id > 0)
+            {
+                <input type="hidden" name="Id" value="@Model.Id" />
+            }
+
+            <div class="mb-3">
+                <label class="form-label">Student</label>
+                <select name="StudentId" class="form-control" required>
+                    <option value="">-- Select student --</option>
+                    @foreach (var student in students)
+                    {
+                        <option value="@student.Id" selected="@(Model?.StudentId == student.Id)">
+                            @student.FirstName @student.LastName (@student.Group?.Name)
+                        </option>
+                    }
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Lesson</label>
+                <select name="LessonId" class="form-control" required>
+                    <option value="">-- Select lesson --</option>
+                    @foreach (var lesson in lessons)
+                    {
+                        <option value="@lesson.Id" selected="@(Model?.LessonId == lesson.Id)">
+                            @lesson.Date.ToString("dd.MM.yyyy HH:mm") - @lesson.Course?.Name - @lesson.Topic
+                        </option>
+                    }
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Status</label>
+                <select name="Status" class="form-control">
+                    @foreach (var status in statuses)
+                    {
+                        <option value="@status" selected="@(Model?.Status == status)">@status</option>
+                    }
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Date</label>
+                <input name="Date" value="@((Model?.Date ?? DateTime.Today).ToString("yyyy-MM-dd"))" type="date" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-success">Save</button>
+            <a href="@Url.Action("Index")" class="btn btn-secondary">Cancel</a>
+        </form>
     </div>
-
-    <div>
-        <label>Course</label>
-        <input asp-for="CourseId" class="form-control"/>
-    </div>
-
-    <div>
-        <label>Status</label>
-        <select asp-for="Status" class="form-control">
-            <option>Present</option>
-            <option>Absent</option>
-            <option>Late</option>
-        </select>
-    </div>
-
-    <button type="submit" class="btn btn-success mt-2">
-        Save
-    </button>
-
-</form>
+</div>

@@ -18,7 +18,7 @@
     </div>
 </div>
 
-<form method="post" asp-action="DeleteConfirmed" asp-route-id="@Model.Id" style="display:inline;">
+<form method="post" action="@Url.Action("Delete", "Courses", new { id = Model.Id })" style="display:inline;">
     <button type="submit" class="btn btn-danger">🗑️ Confirm Delete</button>
 </form>
 <a href="@Url.Action("Index")" class="btn btn-secondary">❌ Cancel</a>

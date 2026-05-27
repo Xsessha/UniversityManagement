@@ -1,27 +1,49 @@
 @model IEnumerable<UniversityManagement.Core.Models.Faculty>
 
-<h2>Faculties</h2>
+@{
+    ViewData["Title"] = "Faculties";
+    var canManage = User.IsInRole("Admin");
+}
 
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Groups Count</th>
-            <th></th>
-        </tr>
-    </thead>
-
-    <tbody>
-    @foreach (var f in Model)
+<div class="lumina-page-header">
+    <div>
+        <h1><span class="text-gradient">Faculties</span></h1>
+        <p>University faculties and their academic groups.</p>
+    </div>
+    @if (canManage)
     {
-        <tr>
-            <td>@f.Name</td>
-            <td>@f.Groups?.Count()</td>
-            <td>
-                <a asp-action="Details" asp-route-id="@f.Id">Details</a> |
-                <a asp-action="TreeView" asp-route-id="@f.Id">Tree</a>
-            </td>
-        </tr>
+        <a href="@Url.Action("Create")" class="btn btn-primary">Create Faculty</a>
     }
-    </tbody>
-</table>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Dean</th>
+                <th>Groups</th>
+                <th>Students</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var faculty in Model)
+        {
+            <tr>
+                <td>@faculty.Name</td>
+                <td>@faculty.Dean</td>
+                <td>@faculty.Groups.Count</td>
+                <td>@faculty.Groups.Sum(g => g.Students.Count)</td>
+                <td>
+                    <a href="@Url.Action("TreeView", new { id = faculty.Id })" class="btn btn-sm btn-info">Tree</a>
+                    @if (canManage)
+                    {
+                        <a href="@Url.Action("Edit", new { id = faculty.Id })" class="btn btn-sm btn-warning">Edit</a>
+                    }
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

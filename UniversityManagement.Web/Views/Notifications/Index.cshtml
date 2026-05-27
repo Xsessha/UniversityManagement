@@ -1,24 +1,29 @@
 @model IEnumerable<UniversityManagement.Core.Models.Notification>
 
-<h2>Notifications</h2>
+@{
+    ViewData["Title"] = "Notifications";
+}
 
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Message</th>
-            <th>Date</th>
-            <th>User</th>
-        </tr>
-    </thead>
+<div class="lumina-page-header">
+    <div>
+        <h1><span class="text-gradient">Notifications</span></h1>
+        <p>System and academic messages for users.</p>
+    </div>
+</div>
 
-    <tbody>
-    @foreach (var n in Model)
+<div class="lumina-list">
+    @foreach (var notification in Model)
     {
-        <tr>
-            <td>@n.Message</td>
-            <td>@n.CreatedAt.ToString("g")</td>
-            <td>@n.Student?.FirstName @n.Student?.LastName</td>
-        </tr>
+        <div class="lumina-list-item">
+            <div class="d-flex justify-content-between gap-3">
+                <strong>@notification.Title</strong>
+                <small>@notification.CreatedAt.ToString("g")</small>
+            </div>
+            <small>@notification.Message</small>
+            @if (notification.Student != null)
+            {
+                <div><span class="badge bg-info mt-2">@notification.Student.FirstName @notification.Student.LastName (@notification.Student.Group?.Name)</span></div>
+            }
+        </div>
     }
-    </tbody>
-</table>
+</div>

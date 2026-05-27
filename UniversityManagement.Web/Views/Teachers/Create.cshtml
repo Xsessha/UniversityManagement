@@ -4,39 +4,34 @@
     ViewData["Title"] = "Create Teacher";
 }
 
-<h1 class="mb-4">➕ Add New Teacher</h1>
+<h1 class="mb-4">Add New Teacher</h1>
 
 <div class="row">
-    <div class="col-md-6">
-        <form method="post" class="card p-4">
-            <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
-
+    <div class="col-lg-7">
+        <form method="post" action="@Url.Action("Create", "Teachers")" class="card p-4">
             <div class="mb-3">
-                <label asp-for="FirstName" class="form-label"></label>
-                <input asp-for="FirstName" class="form-control" placeholder="First Name" />
-                <span asp-validation-for="FirstName" class="text-danger"></span>
+                <label class="form-label">First Name</label>
+                <input name="FirstName" value="@Model?.FirstName" class="form-control" required />
             </div>
-
             <div class="mb-3">
-                <label asp-for="LastName" class="form-label"></label>
-                <input asp-for="LastName" class="form-control" placeholder="Last Name" />
-                <span asp-validation-for="LastName" class="text-danger"></span>
+                <label class="form-label">Last Name</label>
+                <input name="LastName" value="@Model?.LastName" class="form-control" required />
             </div>
-
             <div class="mb-3">
-                <label asp-for="Email" class="form-label"></label>
-                <input asp-for="Email" type="email" class="form-control" placeholder="Email" />
-                <span asp-validation-for="Email" class="text-danger"></span>
+                <label class="form-label">Email</label>
+                <input name="Email" value="@Model?.Email" type="email" class="form-control" required />
             </div>
-
             <div class="mb-3">
-                <label asp-for="Department" class="form-label"></label>
-                <input asp-for="Department" class="form-control" placeholder="Department" />
-                <span asp-validation-for="Department" class="text-danger"></span>
+                <label class="form-label">Department</label>
+                <input name="Department" value="@Model?.Department" class="form-control" required />
             </div>
-
-            <button type="submit" class="btn btn-success">✅ Create</button>
-            <a href="@Url.Action("Index")" class="btn btn-secondary">❌ Cancel</a>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input name="password" type="password" class="form-control" required />
+                <small class="form-text text-muted">The teacher will use this password to sign in.</small>
+            </div>
+            <button type="submit" class="btn btn-success">Create</button>
+            <a href="@Url.Action("Index")" class="btn btn-secondary">Cancel</a>
         </form>
     </div>
 </div>

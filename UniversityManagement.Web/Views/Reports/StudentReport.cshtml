@@ -1,26 +1,39 @@
 @model IEnumerable<UniversityManagement.Core.Models.Student>
 
-<h2>Student Report</h2>
+@{
+    ViewData["Title"] = "Student Report";
+}
 
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Group</th>
-            <th>Rating</th>
-            <th>Status</th>
-        </tr>
-    </thead>
+<div class="lumina-page-header">
+    <div>
+        <h1><span class="text-gradient">Student Report</span></h1>
+        <p>Academic status, groups, faculties, and ratings.</p>
+    </div>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">Back</a>
+</div>
 
-    <tbody>
-    @foreach (var s in Model)
-    {
-        <tr>
-            <td>@s.FirstName @s.LastName</td>
-            <td>@s.Group?.Name</td>
-            <td>@s.Rating</td>
-            <td>@s.Status</td>
-        </tr>
-    }
-    </tbody>
-</table>
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Faculty</th>
+                <th>Group</th>
+                <th>Rating</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.FirstName @student.LastName</td>
+                <td>@student.Group?.Faculty?.Name</td>
+                <td>@student.Group?.Name</td>
+                <td>@student.Rating</td>
+                <td><span class="badge bg-info">@student.Status</span></td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

@@ -7,8 +7,8 @@
         <div class="col-md-6">
             <div class="card shadow">
                 <div class="card-body p-5">
-                    <h2 class="text-center mb-4">🟢 Create Account</h2>
-                    
+                    <h2 class="text-center mb-4">Create Account</h2>
+
                     @if (ViewData.ModelState.Values.SelectMany(x => x.Errors).Any())
                     {
                         <div class="alert alert-danger">
@@ -19,7 +19,7 @@
                         </div>
                     }
 
-                    <form method="post">
+                    <form method="post" action="@Url.Action("Register", "Account")">
                         <div class="mb-3">
                             <label class="form-label">First Name</label>
                             <input type="text" name="firstName" class="form-control" required />
@@ -44,17 +44,18 @@
                             <label class="form-label">Role</label>
                             <select name="role" class="form-control" required>
                                 <option value="">-- Select Role --</option>
-                                <option value="Student">👨‍🎓 Student</option>
-                                <option value="Teacher">👨‍🏫 Teacher</option>
+                                <option value="Admin">Administrator</option>
+                                <option value="Teacher">Teacher</option>
+                                <option value="Student">Student</option>
                             </select>
                         </div>
 
-                        <button type="submit" class="btn btn-success w-100">🟢 Create Account</button>
+                        <button type="submit" class="btn btn-success w-100">Create Account</button>
                     </form>
 
                     <p class="text-center mt-3">
-                        Already have an account? 
-                        <a href="@Url.Action("Login")" class="btn btn-outline-primary btn-sm">🔵 Login</a>
+                        Already have an account?
+                        <a href="@Url.Action("Login")" class="btn btn-outline-primary btn-sm">Login</a>
                     </p>
                 </div>
             </div>

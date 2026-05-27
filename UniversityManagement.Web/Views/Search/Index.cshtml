@@ -1,0 +1,45 @@
+@model SearchViewModel
+
+@{
+    ViewData["Title"] = "Search";
+}
+
+<div class="lumina-page-header">
+    <div>
+        <h1><span class="text-gradient">Search</span></h1>
+        <p>Find students, teachers, courses, groups, and reports.</p>
+    </div>
+</div>
+
+<form method="get" action="@Url.Action("Index", "Search")" class="card p-3 mb-3">
+    <div class="row g-2">
+        <div class="col-md-10">
+            <input class="form-control" type="search" name="q" value="@Model.Query" placeholder="Type a name, course, group, or report" />
+        </div>
+        <div class="col-md-2 d-grid">
+            <button class="btn btn-primary" type="submit">Search</button>
+        </div>
+    </div>
+</form>
+
+@if (string.IsNullOrWhiteSpace(Model.Query))
+{
+    <div class="alert alert-info">Enter a search term to start.</div>
+}
+else if (!Model.Results.Any())
+{
+    <div class="alert alert-info">No results found for "@Model.Query".</div>
+}
+else
+{
+    <div class="lumina-list">
+        @foreach (var result in Model.Results)
+        {
+            <a class="lumina-list-item text-decoration-none" href="@result.Url">
+                <span class="badge bg-info">@result.Type</span>
+                <strong class="mt-2">@result.Title</strong>
+                <small>@result.Subtitle</small>
+            </a>
+        }
+    </div>
+}

@@ -6,8 +6,8 @@
 
 <div class="lumina-page-header">
     <div>
-        <h1><span class="text-gradient">University Dashboard</span></h1>
-        <p>Overview of students, teachers, courses, schedule, and recent campus activity.</p>
+        <h1><span class="text-gradient">@Model.RoleName Dashboard</span></h1>
+        <p>@Model.RoleSummary</p>
     </div>
     <div class="lumina-actions">
         <a href="@Url.Action("Index", "Reports")" class="btn btn-outline-primary">
@@ -42,6 +42,21 @@
         <strong>@Model.TodayLessons.Count</strong>
         <span>Lessons today</span>
     </article>
+    <article class="lumina-stat-card">
+        <span class="lumina-stat-icon"><i data-lucide="layers"></i></span>
+        <strong>@Model.TotalGroups</strong>
+        <span>Groups</span>
+    </article>
+    <article class="lumina-stat-card">
+        <span class="lumina-stat-icon"><i data-lucide="activity"></i></span>
+        <strong>@Model.AttendanceRate.ToString("0.#")%</strong>
+        <span>Attendance rate</span>
+    </article>
+    <article class="lumina-stat-card">
+        <span class="lumina-stat-icon"><i data-lucide="trophy"></i></span>
+        <strong>@Model.AverageRating.ToString("0.#")</strong>
+        <span>Average rating</span>
+    </article>
 </section>
 
 <section class="lumina-dashboard-grid">
@@ -52,6 +67,15 @@
                 <h2>Quick access</h2>
             </div>
             <span>@DateTime.Today.ToString("MMM dd, yyyy")</span>
+        </div>
+        <div class="lumina-list mb-3">
+            @foreach (var item in Model.QuickSummary)
+            {
+                <div class="lumina-list-item">
+                    <strong>@item</strong>
+                    <small>Live workflow status for the current role.</small>
+                </div>
+            }
         </div>
         <div class="lumina-quick-grid">
             <a href="@Url.Action("Index", "Students")" class="lumina-quick-link">

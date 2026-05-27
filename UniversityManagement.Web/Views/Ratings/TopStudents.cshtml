@@ -1,14 +1,26 @@
 @model IEnumerable<UniversityManagement.Core.Models.Student>
 
-<h2>Top Students</h2>
-
-<ol>
-@foreach (var s in Model)
-{
-    <li>
-        @s.FirstName @s.LastName - Rating: @s.Rating
-    </li>
+@{
+    ViewData["Title"] = "Top Students";
+    var rank = 1;
 }
-</ol>
 
-<a asp-action="Index" class="btn btn-secondary">Back</a>
+<div class="lumina-page-header">
+    <div>
+        <h1><span class="text-gradient">Top Students</span></h1>
+        <p>Highest rated students in the university.</p>
+    </div>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">Back</a>
+</div>
+
+<div class="lumina-list">
+    @foreach (var student in Model)
+    {
+        <div class="lumina-list-item">
+            <span class="badge bg-primary">#@rank</span>
+            <strong>@student.FirstName @student.LastName</strong>
+            <small>@student.Group?.Name - Rating: @student.Rating</small>
+        </div>
+        rank++;
+    }
+</div>

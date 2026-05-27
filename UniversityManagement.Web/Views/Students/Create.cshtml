@@ -1,51 +1,73 @@
 @model UniversityManagement.Core.Models.Student
+@using UniversityManagement.Core.Enums
 
 @{
     ViewData["Title"] = "Create Student";
+    var groups = ViewBag.Groups as List<UniversityManagement.Core.Models.Group> ?? new();
+    var statuses = ViewBag.Statuses as StudentStatus[] ?? Enum.GetValues<StudentStatus>();
 }
 
-<h1 class="mb-4">➕ Add New Student</h1>
+<h1 class="mb-4">Add New Student</h1>
 
 <div class="row">
-    <div class="col-md-6">
-        <form method="post" class="card p-4">
-            <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
-
+    <div class="col-lg-7">
+        <form method="post" action="@Url.Action("Create", "Students")" class="card p-4">
             <div class="mb-3">
-                <label asp-for="FirstName" class="form-label"></label>
-                <input asp-for="FirstName" class="form-control" placeholder="First Name" />
-                <span asp-validation-for="FirstName" class="text-danger"></span>
+                <label class="form-label">First Name</label>
+                <input name="FirstName" value="@Model?.FirstName" class="form-control" required />
             </div>
 
             <div class="mb-3">
-                <label asp-for="LastName" class="form-label"></label>
-                <input asp-for="LastName" class="form-control" placeholder="Last Name" />
-                <span asp-validation-for="LastName" class="text-danger"></span>
+                <label class="form-label">Last Name</label>
+                <input name="LastName" value="@Model?.LastName" class="form-control" required />
             </div>
 
             <div class="mb-3">
-                <label asp-for="Email" class="form-label"></label>
-                <input asp-for="Email" type="email" class="form-control" placeholder="Email" />
-                <span asp-validation-for="Email" class="text-danger"></span>
+                <label class="form-label">Email</label>
+                <input name="Email" value="@Model?.Email" type="email" class="form-control" required />
             </div>
 
             <div class="mb-3">
-                <label asp-for="BirthDate" class="form-label"></label>
-                <input asp-for="BirthDate" type="date" class="form-control" />
-                <span asp-validation-for="BirthDate" class="text-danger"></span>
+                <label class="form-label">Birth Date</label>
+                <input name="BirthDate" value="@((Model?.BirthDate ?? DateTime.Today.AddYears(-18)).ToString("yyyy-MM-dd"))" type="date" class="form-control" required />
             </div>
 
             <div class="mb-3">
-                <label asp-for="Status" class="form-label"></label>
-                <select asp-for="Status" class="form-control">
-                    <option value="0">Active</option>
-                    <option value="1">Inactive</option>
-                    <option value="2">Suspended</option>
+                <label class="form-label">Group</label>
+                <select name="GroupId" class="form-control" required>
+                    <option value="">-- Select group --</option>
+                    @foreach (var group in groups)
+                    {
+                        <option value="@group.Id" selected="@(Model?.GroupId == group.Id)">
+                            @group.Name (@group.Faculty?.Name)
+                        </option>
+                    }
                 </select>
             </div>
 
-            <button type="submit" class="btn btn-success">✅ Create</button>
-            <a href="@Url.Action("Index")" class="btn btn-secondary">❌ Cancel</a>
+            <div class="mb-3">
+                <label class="form-label">Status</label>
+                <select name="Status" class="form-control">
+                    @foreach (var status in statuses)
+                    {
+                        <option value="@status" selected="@(Model?.Status == status)">@status</option>
+                    }
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Rating</label>
+                <input name="Rating" value="@(Model?.Rating ?? 0)" type="number" min="0" max="100" step="0.1" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input name="password" type="password" class="form-control" required />
+                <small class="form-text text-muted">The student will use this password to sign in.</small>
+            </div>
+
+            <button type="submit" class="btn btn-success">Create</button>
+            <a href="@Url.Action("Index")" class="btn btn-secondary">Cancel</a>
         </form>
     </div>
 </div>

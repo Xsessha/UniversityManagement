@@ -1,28 +1,55 @@
 @model IEnumerable<UniversityManagement.Core.Models.Schedule>
 
-<h2>Schedule</h2>
+@{
+    ViewData["Title"] = "Schedule";
+    var canManage = User.IsInRole("Admin");
+}
 
-<a asp-action="CreateLesson" class="btn btn-primary">Create Lesson</a>
+<div class="lumina-page-header">
+    <div>
+        <h1><span class="text-gradient">Schedule</span></h1>
+        <p>Lessons by group, course, teacher, and time.</p>
+    </div>
+    <div class="lumina-actions">
+        <a href="@Url.Action("Calendar")" class="btn btn-outline-primary">Calendar</a>
+        <a href="@Url.Action("Today")" class="btn btn-outline-secondary">Today</a>
+        @if (canManage)
+        {
+            <a href="@Url.Action("CreateLesson")" class="btn btn-primary">Create Lesson</a>
+        }
+    </div>
+</div>
 
-<table class="table table-bordered mt-3">
-    <thead>
-        <tr>
-            <th>Course</th>
-            <th>Teacher</th>
-            <th>Type</th>
-            <th>Date</th>
-        </tr>
-    </thead>
-
-    <tbody>
-    @foreach (var s in Model)
-    {
-        <tr>
-            <td>@s.Lesson?.Course?.Name</td>
-            <td>@s.Lesson?.Course?.Teacher?.FirstName @s.Lesson?.Course?.Teacher?.LastName</td>
-            <td>@s.Lesson?.Type</td>
-            <td>@s.DayOfWeek @s.StartTime - @s.EndTime</td>
-        </tr>
-    }
-    </tbody>
-</table>
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Group</th>
+                <th>Course</th>
+                <th>Teacher</th>
+                <th>Type</th>
+                <th>Date</th>
+                @if (canManage)
+                {
+                    <th></th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var schedule in Model)
+        {
+            <tr>
+                <td>@schedule.Group?.Name</td>
+                <td>@schedule.Lesson?.Course?.Name</td>
+                <td>@schedule.Lesson?.Course?.Teacher?.FirstName @schedule.Lesson?.Course?.Teacher?.LastName</td>
+                <td><span class="badge bg-info">@schedule.Lesson?.Type</span></td>
+                <td>@schedule.DayOfWeek @schedule.StartTime - @schedule.EndTime</td>
+                @if (canManage)
+                {
+                    <td><a href="@Url.Action("Edit", new { id = schedule.Id })" class="btn btn-sm btn-warning">Edit</a></td>
+                }
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

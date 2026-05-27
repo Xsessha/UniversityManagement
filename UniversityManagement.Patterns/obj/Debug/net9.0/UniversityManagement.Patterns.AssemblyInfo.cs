@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UniversityManagement.Patterns")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f907b073385904f914f0e0fe7b10ccf9d3a7271e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68e36cc18d9e424a14440fd15a57d2fadbe14ebf")]
 [assembly: System.Reflection.AssemblyProductAttribute("UniversityManagement.Patterns")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UniversityManagement.Patterns")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

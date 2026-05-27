@@ -1,6 +1,7 @@
 @{
     var title = ViewData["Title"]?.ToString() ?? "Dashboard";
     var isAuthenticated = User.Identity?.IsAuthenticated ?? false;
+    var roleLabel = User.IsInRole("Admin") ? "Administrator" : User.IsInRole("Teacher") ? "Teacher" : User.IsInRole("Student") ? "Student" : "User";
 }
 
 <header class="lumina-topbar">
@@ -31,10 +32,10 @@
 
         @if (isAuthenticated)
         {
-            <label class="lumina-search">
+            <form class="lumina-search" method="get" action="@Url.Action("Index", "Search")">
                 <i data-lucide="search"></i>
-                <input type="search" placeholder="Search campus records" aria-label="Search campus records" />
-            </label>
+                <input type="search" name="q" value="@Context.Request.Query["q"]" placeholder="Search campus records" aria-label="Search campus records" />
+            </form>
             <button type="button" class="lumina-icon-button" data-theme-toggle aria-label="Toggle theme">
                 <i data-lucide="sun" class="theme-icon-light"></i>
                 <i data-lucide="moon" class="theme-icon-dark"></i>
@@ -45,7 +46,7 @@
             </a>
             <div class="lumina-user-chip">
                 <span class="lumina-avatar">UM</span>
-                <span>@User.Identity?.Name</span>
+                <span>@User.Identity?.Name <small>@roleLabel</small></span>
             </div>
             <form method="post" action="@Url.Action("Logout", "Account")">
                 <button type="submit" class="btn btn-outline-light btn-sm lumina-logout">

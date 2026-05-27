@@ -1,29 +1,49 @@
 @model IEnumerable<UniversityManagement.Core.Models.Group>
 
-<h2>Groups</h2>
+@{
+    ViewData["Title"] = "Groups";
+    var canManage = User.IsInRole("Admin");
+}
 
-<a asp-action="Create" class="btn btn-primary">Create Group</a>
-
-<table class="table mt-3">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Faculty</th>
-            <th></th>
-        </tr>
-    </thead>
-
-    <tbody>
-    @foreach (var g in Model)
+<div class="lumina-page-header">
+    <div>
+        <h1><span class="text-gradient">Groups</span></h1>
+        <p>Academic groups with faculties, students, and courses.</p>
+    </div>
+    @if (canManage)
     {
-        <tr>
-            <td>@g.Name</td>
-            <td>@g.Faculty?.Name</td>
-            <td>
-                <a asp-action="Details" asp-route-id="@g.Id">Details</a> |
-                <a asp-action="Edit" asp-route-id="@g.Id">Edit</a>
-            </td>
-        </tr>
+        <a href="@Url.Action("Create")" class="btn btn-primary">Create Group</a>
     }
-    </tbody>
-</table>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Faculty</th>
+                <th>Students</th>
+                <th>Courses</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var group in Model)
+        {
+            <tr>
+                <td>@group.Name</td>
+                <td>@group.Faculty?.Name</td>
+                <td>@group.Students.Count</td>
+                <td>@group.Courses.Count</td>
+                <td>
+                    <a href="@Url.Action("Details", new { id = group.Id })" class="btn btn-sm btn-info">Details</a>
+                    @if (canManage)
+                    {
+                        <a href="@Url.Action("Edit", new { id = group.Id })" class="btn btn-sm btn-warning">Edit</a>
+                    }
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

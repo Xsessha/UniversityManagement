@@ -1,0 +1,36 @@
+@model IEnumerable<UniversityManagement.Core.Models.ApplicationUser>
+
+@{
+    ViewData["Title"] = "Users";
+}
+
+<div class="lumina-page-header">
+    <div>
+        <h1><span class="text-gradient">Users</span></h1>
+        <p>Administrator user and role management.</p>
+    </div>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.FirstName @user.LastName</td>
+                <td>@user.Email</td>
+                <td><span class="badge bg-info">@user.Role</span></td>
+                <td><a href="@Url.Action("Edit", new { id = user.Id })" class="btn btn-sm btn-warning">Edit</a></td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

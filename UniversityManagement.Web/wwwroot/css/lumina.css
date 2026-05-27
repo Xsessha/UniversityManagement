@@ -448,6 +448,14 @@ h1 {
     white-space: nowrap;
 }
 
+.lumina-user-chip small {
+    display: block;
+    color: var(--lumina-muted);
+    font-size: 0.68rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
 .lumina-logout {
     display: inline-flex;
     align-items: center;

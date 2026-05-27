@@ -14,9 +14,56 @@
                 <p><strong>Email:</strong> @Model.Email</p>
                 <p><strong>Status:</strong> <span class="badge bg-info">@Model.Status</span></p>
                 <p><strong>Rating:</strong> ⭐ @Model.Rating</p>
-                <p><strong>Group ID:</strong> @Model.GroupId</p>
+                <p><strong>Group:</strong> @Model.Group?.Name</p>
+                <p><strong>Faculty:</strong> @Model.Group?.Faculty?.Name</p>
                 <p><strong>Birth Date:</strong> @Model.BirthDate.ToString("d")</p>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-3 mt-3">
+    <div class="col-lg-6">
+        <div class="card p-3">
+            <h3>Today’s Group Schedule</h3>
+            @{ var schedule = ViewBag.StudentSchedule as List<UniversityManagement.Core.Models.Schedule> ?? new(); }
+            @if (schedule.Any())
+            {
+                <ul class="list-group list-group-flush">
+                    @foreach (var item in schedule.Take(10))
+                    {
+                        <li class="list-group-item bg-transparent">
+                            <strong>@item.DayOfWeek</strong> @item.StartTime - @item.EndTime<br />
+                            @item.Lesson?.Course?.Name (@item.Lesson?.Type) with @item.Lesson?.Course?.Teacher?.FirstName @item.Lesson?.Course?.Teacher?.LastName
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p class="text-muted">No scheduled lessons yet for this group.</p>
+            }
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card p-3">
+            <h3>Grade Summary</h3>
+            @if (Model.Grades.Any())
+            {
+                <ul class="list-group list-group-flush">
+                    @foreach (var grade in Model.Grades.OrderByDescending(g => g.Date).Take(8))
+                    {
+                        <li class="list-group-item bg-transparent">
+                            @grade.Course?.Name: @grade.Value<br />
+                            <small>@grade.Date:d</small>
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p class="text-muted">No grades entered yet.</p>
+            }
         </div>
     </div>
 </div>

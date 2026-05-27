@@ -173,5 +173,5 @@ C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.
 C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Web\bin\Debug\net9.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Web\bin\Debug\net9.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Web\bin\Debug\net9.0\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Web\obj\Debug\net9.0\compressed\2p2oq6w72b-kng5xgllv1.gz
 C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Web\obj\Debug\net9.0\compressed\fxu8qlfqky-52nc31lut4.gz
+C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Web\obj\Debug\net9.0\compressed\2p2oq6w72b-edc1hx8znk.gz

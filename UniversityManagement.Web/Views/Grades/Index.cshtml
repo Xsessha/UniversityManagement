@@ -1,0 +1,45 @@
+@model IEnumerable<UniversityManagement.Core.Models.Grade>
+
+@{
+    ViewData["Title"] = "Grades";
+    var canEdit = User.IsInRole("Admin") || User.IsInRole("Teacher");
+}
+
+<div class="lumina-page-header">
+    <div>
+        <h1><span class="text-gradient">Grades</span></h1>
+        <p>Score records by student, course, and lesson date.</p>
+    </div>
+    @if (canEdit)
+    {
+        <a href="@Url.Action("Create")" class="btn btn-primary">Record Grade</a>
+    }
+</div>
+
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th>Course</th>
+                <th>Teacher</th>
+                <th>Value</th>
+                <th>Date</th>
+                <th>Comment</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var grade in Model)
+        {
+            <tr>
+                <td>@grade.Student?.FirstName @grade.Student?.LastName</td>
+                <td>@grade.Course?.Name</td>
+                <td>@grade.Course?.Teacher?.FirstName @grade.Course?.Teacher?.LastName</td>
+                <td>@grade.Value</td>
+                <td>@grade.Date.ToString("d")</td>
+                <td>@grade.Comment</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

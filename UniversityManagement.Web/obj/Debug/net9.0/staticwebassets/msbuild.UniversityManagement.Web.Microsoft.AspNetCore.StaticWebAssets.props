@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>kng5xgllv1</Fingerprint>
-      <Integrity>cIs5xYfFVUfpbpLvev2Ghbi/ReqQnn1F0a2uTXZUEHw=</Integrity>
+      <Fingerprint>edc1hx8znk</Fingerprint>
+      <Integrity>4gmGPo459sdM2GICGfLeDEIBqr3HCS5cWZe1lk2YRCk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\lumina.css'))</OriginalItemSpec>

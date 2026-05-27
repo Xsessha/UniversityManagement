@@ -19,6 +19,51 @@
     </div>
 </div>
 
+<div class="row g-3 mt-3">
+    <div class="col-lg-6">
+        <div class="card p-3">
+            <h3>Assigned Courses</h3>
+            @if (Model.Courses.Any())
+            {
+                <ul class="list-group list-group-flush">
+                    @foreach (var course in Model.Courses.OrderBy(c => c.Name))
+                    {
+                        <li class="list-group-item bg-transparent">
+                            @course.Name - @course.Credits credits
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p class="text-muted">No courses assigned yet.</p>
+            }
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card p-3">
+            <h3>Upcoming Lessons</h3>
+            @{ var schedule = ViewBag.TeacherSchedule as List<UniversityManagement.Core.Models.Schedule> ?? new(); }
+            @if (schedule.Any())
+            {
+                <ul class="list-group list-group-flush">
+                    @foreach (var item in schedule.Take(10))
+                    {
+                        <li class="list-group-item bg-transparent">
+                            <strong>@item.DayOfWeek</strong> @item.StartTime - @item.EndTime<br />
+                            @item.Lesson?.Course?.Name - @item.Lesson?.Topic (@item.Group?.Name)
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p class="text-muted">No lessons scheduled yet.</p>
+            }
+        </div>
+    </div>
+</div>
+
 <div class="mt-3">
     <a href="@Url.Action("Edit", new { id = Model.Id })" class="btn btn-warning">✏️ Edit</a>
     <a href="@Url.Action("Index")" class="btn btn-secondary">⬅️ Back</a>

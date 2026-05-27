@@ -1,0 +1,39 @@
+@model UniversityManagement.Core.Models.ApplicationUser
+@using UniversityManagement.Core.Enums
+
+@{
+    ViewData["Title"] = "Edit User";
+    var roles = ViewBag.Roles as UserRole[] ?? Enum.GetValues<UserRole>();
+}
+
+<h1>Edit User</h1>
+
+<div class="row">
+    <div class="col-lg-6">
+        <form method="post" action="@Url.Action("Edit", "Users", new { id = Model.Id })" class="card p-4">
+            <div class="mb-3">
+                <label class="form-label">First Name</label>
+                <input name="firstName" value="@Model.FirstName" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Last Name</label>
+                <input name="lastName" value="@Model.LastName" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input value="@Model.Email" class="form-control" disabled />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Role</label>
+                <select name="role" class="form-control">
+                    @foreach (var role in roles)
+                    {
+                        <option value="@role" selected="@(Model.Role == role)">@role</option>
+                    }
+                </select>
+            </div>
+            <button class="btn btn-warning">Save Changes</button>
+            <a href="@Url.Action("Index")" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>

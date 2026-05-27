@@ -1,31 +1,43 @@
 @model IEnumerable<UniversityManagement.Web.ViewModels.RatingViewModel>
 
-<h2>Ratings</h2>
+@{
+    ViewData["Title"] = "Ratings";
+}
 
-<div class="mb-3">
-    <a asp-action="Statistics" class="btn btn-primary">Statistics</a>
-    <a asp-action="TopStudents" class="btn btn-success">Top Students</a>
+<div class="lumina-page-header">
+    <div>
+        <h1><span class="text-gradient">Ratings</span></h1>
+        <p>Student performance and scholarship status.</p>
+    </div>
+    <div class="lumina-actions">
+        @if (User.IsInRole("Admin") || User.IsInRole("Teacher"))
+        {
+            <a href="@Url.Action("Statistics")" class="btn btn-primary">Statistics</a>
+        }
+        <a href="@Url.Action("TopStudents")" class="btn btn-success">Top Students</a>
+    </div>
 </div>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Student</th>
-            <th>Group</th>
-            <th>Average rating</th>
-            <th>Scholarship status</th>
-        </tr>
-    </thead>
-
-    <tbody>
-    @foreach (var r in Model)
-    {
-        <tr>
-            <td>@r.StudentName</td>
-            <td>@r.GroupName</td>
-            <td>@r.AverageRating.ToString("0.##")</td>
-            <td>@r.ScholarshipStatus</td>
-        </tr>
-    }
-    </tbody>
-</table>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th>Group</th>
+                <th>Average rating</th>
+                <th>Scholarship status</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var rating in Model)
+        {
+            <tr>
+                <td>@rating.StudentName</td>
+                <td>@rating.GroupName</td>
+                <td>@rating.AverageRating.ToString("0.##")</td>
+                <td>@rating.ScholarshipStatus</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

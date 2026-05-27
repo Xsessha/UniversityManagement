@@ -1,24 +1,39 @@
 @model IEnumerable<UniversityManagement.Core.Models.Faculty>
 
-<h2>Faculty Report</h2>
+@{
+    ViewData["Title"] = "Faculty Report";
+}
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Faculty</th>
-            <th>Groups</th>
-            <th>Students</th>
-        </tr>
-    </thead>
+<div class="lumina-page-header">
+    <div>
+        <h1><span class="text-gradient">Faculty Report</span></h1>
+        <p>Faculty structure by groups, students, and courses.</p>
+    </div>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">Back</a>
+</div>
 
-    <tbody>
-    @foreach (var f in Model)
-    {
-        <tr>
-            <td>@f.Name</td>
-            <td>@f.Groups?.Count()</td>
-            <td>@f.Groups?.Sum(g => g.Students.Count)</td>
-        </tr>
-    }
-    </tbody>
-</table>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Faculty</th>
+                <th>Dean</th>
+                <th>Groups</th>
+                <th>Students</th>
+                <th>Courses</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var faculty in Model)
+        {
+            <tr>
+                <td>@faculty.Name</td>
+                <td>@faculty.Dean</td>
+                <td>@faculty.Groups.Count</td>
+                <td>@faculty.Groups.Sum(g => g.Students.Count)</td>
+                <td>@faculty.Groups.SelectMany(g => g.Courses).Select(c => c.Id).Distinct().Count()</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

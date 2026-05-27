@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dbZLaKXld30+AP/OP/0yAWCiwoUwWzuAfpehwSJ++RM=",
+  "Hash": "zc8aM9l3cXwDwL4jDDuMIXi+5ubCiRdiRCjcOrZ8LjI=",
   "Source": "UniversityManagement.Web",
   "BasePath": "_content/UniversityManagement.Web",
   "Mode": "Default",
@@ -206,12 +206,12 @@
       "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\2p2oq6w72b-kng5xgllv1.gz",
+      "Identity": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\2p2oq6w72b-edc1hx8znk.gz",
       "SourceId": "UniversityManagement.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/UniversityManagement.Web",
-      "RelativePath": "css/lumina#[.{fingerprint=kng5xgllv1}]?.css.gz",
+      "RelativePath": "css/lumina#[.{fingerprint=edc1hx8znk}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -220,8 +220,8 @@
       "RelatedAsset": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\lumina.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "tcmozxmg4e",
-      "Integrity": "LQ6NMHEavk5/XiNNZpwhx2Q1KvQguUK1cQ+L3WU4GyQ=",
+      "Fingerprint": "fzyxmht612",
+      "Integrity": "pcaLeoQ1z371/AArG174OuFaATzUSOcrW3qfWdpKWnE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\lumina.css"
@@ -1543,8 +1543,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "kng5xgllv1",
-      "Integrity": "cIs5xYfFVUfpbpLvev2Ghbi/ReqQnn1F0a2uTXZUEHw=",
+      "Fingerprint": "edc1hx8znk",
+      "Integrity": "4gmGPo459sdM2GICGfLeDEIBqr3HCS5cWZe1lk2YRCk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\lumina.css"
@@ -3577,12 +3577,12 @@
     },
     {
       "Route": "css/lumina.css",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\2p2oq6w72b-kng5xgllv1.gz",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\2p2oq6w72b-edc1hx8znk.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000271223217"
+          "Quality": "0.000269832704"
         }
       ],
       "ResponseHeaders": [
@@ -3592,15 +3592,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3686"
+          "Value": "3705"
         },
         {
           "Name": "ETag",
-          "Value": "\"LQ6NMHEavk5/XiNNZpwhx2Q1KvQguUK1cQ+L3WU4GyQ=\""
+          "Value": "\"pcaLeoQ1z371/AArG174OuFaATzUSOcrW3qfWdpKWnE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 May 2026 10:51:57 GMT"
+          "Value": "Tue, 26 May 2026 21:16:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3620,13 +3620,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"cIs5xYfFVUfpbpLvev2Ghbi/ReqQnn1F0a2uTXZUEHw=\""
+          "Value": "W/\"4gmGPo459sdM2GICGfLeDEIBqr3HCS5cWZe1lk2YRCk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cIs5xYfFVUfpbpLvev2Ghbi/ReqQnn1F0a2uTXZUEHw="
+          "Value": "sha256-4gmGPo459sdM2GICGfLeDEIBqr3HCS5cWZe1lk2YRCk="
         }
       ]
     },
@@ -3641,7 +3641,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "18818"
+          "Value": "18967"
         },
         {
           "Name": "Content-Type",
@@ -3649,11 +3649,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cIs5xYfFVUfpbpLvev2Ghbi/ReqQnn1F0a2uTXZUEHw=\""
+          "Value": "\"4gmGPo459sdM2GICGfLeDEIBqr3HCS5cWZe1lk2YRCk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 May 2026 10:51:57 GMT"
+          "Value": "Tue, 26 May 2026 21:16:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3663,13 +3663,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cIs5xYfFVUfpbpLvev2Ghbi/ReqQnn1F0a2uTXZUEHw="
+          "Value": "sha256-4gmGPo459sdM2GICGfLeDEIBqr3HCS5cWZe1lk2YRCk="
         }
       ]
     },
     {
       "Route": "css/lumina.css.gz",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\2p2oq6w72b-kng5xgllv1.gz",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\2p2oq6w72b-edc1hx8znk.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3678,7 +3678,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3686"
+          "Value": "3705"
         },
         {
           "Name": "Content-Type",
@@ -3686,11 +3686,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LQ6NMHEavk5/XiNNZpwhx2Q1KvQguUK1cQ+L3WU4GyQ=\""
+          "Value": "\"pcaLeoQ1z371/AArG174OuFaATzUSOcrW3qfWdpKWnE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 May 2026 10:51:57 GMT"
+          "Value": "Tue, 26 May 2026 21:16:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3708,18 +3708,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LQ6NMHEavk5/XiNNZpwhx2Q1KvQguUK1cQ+L3WU4GyQ="
+          "Value": "sha256-pcaLeoQ1z371/AArG174OuFaATzUSOcrW3qfWdpKWnE="
         }
       ]
     },
     {
-      "Route": "css/lumina.kng5xgllv1.css",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\2p2oq6w72b-kng5xgllv1.gz",
+      "Route": "css/lumina.edc1hx8znk.css",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\2p2oq6w72b-edc1hx8znk.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000271223217"
+          "Quality": "0.000269832704"
         }
       ],
       "ResponseHeaders": [
@@ -3729,15 +3729,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3686"
+          "Value": "3705"
         },
         {
           "Name": "ETag",
-          "Value": "\"LQ6NMHEavk5/XiNNZpwhx2Q1KvQguUK1cQ+L3WU4GyQ=\""
+          "Value": "\"pcaLeoQ1z371/AArG174OuFaATzUSOcrW3qfWdpKWnE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 May 2026 10:51:57 GMT"
+          "Value": "Tue, 26 May 2026 21:16:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3757,13 +3757,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"cIs5xYfFVUfpbpLvev2Ghbi/ReqQnn1F0a2uTXZUEHw=\""
+          "Value": "W/\"4gmGPo459sdM2GICGfLeDEIBqr3HCS5cWZe1lk2YRCk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kng5xgllv1"
+          "Value": "edc1hx8znk"
         },
         {
           "Name": "label",
@@ -3771,12 +3771,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-cIs5xYfFVUfpbpLvev2Ghbi/ReqQnn1F0a2uTXZUEHw="
+          "Value": "sha256-4gmGPo459sdM2GICGfLeDEIBqr3HCS5cWZe1lk2YRCk="
         }
       ]
     },
     {
-      "Route": "css/lumina.kng5xgllv1.css",
+      "Route": "css/lumina.edc1hx8znk.css",
       "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\wwwroot\\css\\lumina.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3786,7 +3786,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "18818"
+          "Value": "18967"
         },
         {
           "Name": "Content-Type",
@@ -3794,11 +3794,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cIs5xYfFVUfpbpLvev2Ghbi/ReqQnn1F0a2uTXZUEHw=\""
+          "Value": "\"4gmGPo459sdM2GICGfLeDEIBqr3HCS5cWZe1lk2YRCk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 May 2026 10:51:57 GMT"
+          "Value": "Tue, 26 May 2026 21:16:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3808,7 +3808,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kng5xgllv1"
+          "Value": "edc1hx8znk"
         },
         {
           "Name": "label",
@@ -3816,13 +3816,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-cIs5xYfFVUfpbpLvev2Ghbi/ReqQnn1F0a2uTXZUEHw="
+          "Value": "sha256-4gmGPo459sdM2GICGfLeDEIBqr3HCS5cWZe1lk2YRCk="
         }
       ]
     },
     {
-      "Route": "css/lumina.kng5xgllv1.css.gz",
-      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\2p2oq6w72b-kng5xgllv1.gz",
+      "Route": "css/lumina.edc1hx8znk.css.gz",
+      "AssetFile": "C:\\Users\\Lenovo Yoga\\OneDrive\\Desktop\\UniversityManagement\\UniversityManagement.Web\\obj\\Debug\\net9.0\\compressed\\2p2oq6w72b-edc1hx8znk.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3831,7 +3831,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3686"
+          "Value": "3705"
         },
         {
           "Name": "Content-Type",
@@ -3839,11 +3839,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LQ6NMHEavk5/XiNNZpwhx2Q1KvQguUK1cQ+L3WU4GyQ=\""
+          "Value": "\"pcaLeoQ1z371/AArG174OuFaATzUSOcrW3qfWdpKWnE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 May 2026 10:51:57 GMT"
+          "Value": "Tue, 26 May 2026 21:16:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3861,7 +3861,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kng5xgllv1"
+          "Value": "edc1hx8znk"
         },
         {
           "Name": "label",
@@ -3869,7 +3869,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-LQ6NMHEavk5/XiNNZpwhx2Q1KvQguUK1cQ+L3WU4GyQ="
+          "Value": "sha256-pcaLeoQ1z371/AArG174OuFaATzUSOcrW3qfWdpKWnE="
         }
       ]
     },

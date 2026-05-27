@@ -1,0 +1,55 @@
+@model UniversityManagement.Core.Models.Grade
+
+@{
+    ViewData["Title"] = "Record Grade";
+    var students = ViewBag.Students as List<UniversityManagement.Core.Models.Student> ?? new();
+    var lessons = ViewBag.Lessons as List<UniversityManagement.Core.Models.Lesson> ?? new();
+}
+
+<div class="lumina-page-header">
+    <div>
+        <h1><span class="text-gradient">Record Grade</span></h1>
+        <p>Assign a grade for a lesson and student.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-8">
+        <form method="post" action="@Url.Action("Create", "Grades")" class="card p-4">
+            <div class="mb-3">
+                <label class="form-label">Student</label>
+                <select name="studentId" class="form-control" required>
+                    <option value="">-- Select student --</option>
+                    @foreach (var student in students)
+                    {
+                        <option value="@student.Id">@student.FirstName @student.LastName (@student.Group?.Name)</option>
+                    }
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Lesson</label>
+                <select name="lessonId" class="form-control" required>
+                    <option value="">-- Select lesson --</option>
+                    @foreach (var lesson in lessons)
+                    {
+                        <option value="@lesson.Id">@lesson.Date.ToString("dd.MM.yyyy HH:mm") - @lesson.Course?.Name - @lesson.Topic</option>
+                    }
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Grade Value</label>
+                <input name="value" type="number" min="0" max="100" class="form-control" required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Comment</label>
+                <textarea name="comment" class="form-control" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success">Save Grade</button>
+            <a href="@Url.Action("Index")" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>

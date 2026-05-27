@@ -15,6 +15,7 @@ public class RatingsController : Controller
         _studentService = studentService;
     }
 
+    [Authorize(Roles = "Admin,Teacher,Student")]
     public async Task<IActionResult> Index()
     {
         var students = await _studentService.GetAllAsync();
@@ -32,6 +33,7 @@ public class RatingsController : Controller
         return View(ratings);
     }
 
+    [Authorize(Roles = "Admin,Teacher")]
     public async Task<IActionResult> Statistics()
     {
         var students = await _studentService.GetAllAsync();
@@ -48,6 +50,7 @@ public class RatingsController : Controller
         return View(model);
     }
 
+    [Authorize(Roles = "Admin,Teacher,Student")]
     public async Task<IActionResult> TopStudents()
     {
         var students = await _studentService.GetAllAsync();

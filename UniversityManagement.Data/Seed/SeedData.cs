@@ -13,61 +13,68 @@ public static class SeedData
         await SeedTeachersAsync(context);
         await SeedCoursesAsync(context);
         await SeedStudentsAsync(context);
+        await SeedCourseGroupsAsync(context);
         await SeedLessonsAsync(context);
+        await SeedSchedulesAsync(context);
         await SeedAttendanceAsync(context);
         await SeedRatingsAsync(context);
         await SeedReportsAsync(context);
+        await NormalizeReportGeneratorsAsync(context);
+        await SeedNotificationsAsync(context);
     }
 
     private static async Task SeedFacultiesAndGroupsAsync(UniversityDbContext context)
     {
-        if (await context.Groups.CountAsync() >= 5)
+        var facultyData = new[]
         {
-            return;
+            ("Faculty of Computer Science", "Dr. Hannah Lewis"),
+            ("Faculty of Business and Engineering", "Prof. Marcus Green"),
+            ("Faculty of Data Science", "Dr. Amelia Wright"),
+            ("Faculty of Natural Sciences", "Prof. Samuel Reed"),
+            ("Faculty of Social Sciences", "Dr. Laura Morgan"),
+            ("Faculty of Cybersecurity", "Prof. Robert Hughes")
+        };
+
+        var existingFacultyNames = await context.Faculties.Select(f => f.Name).ToListAsync();
+        foreach (var faculty in facultyData.Where(f => !existingFacultyNames.Contains(f.Item1)))
+        {
+            context.Faculties.Add(new Faculty
+            {
+                Name = faculty.Item1,
+                Dean = faculty.Item2
+            });
         }
+
+        await context.SaveChangesAsync();
 
         var faculties = await context.Faculties.OrderBy(f => f.Id).ToListAsync();
-
-        if (faculties.Count == 0)
-        {
-            var computerScience = new Faculty
-            {
-                Name = "Faculty of Computer Science",
-                Dean = "Dr. Hannah Lewis"
-            };
-
-            var business = new Faculty
-            {
-                Name = "Faculty of Business and Engineering",
-                Dean = "Prof. Marcus Green"
-            };
-
-            context.Faculties.AddRange(computerScience, business);
-            await context.SaveChangesAsync();
-            faculties = await context.Faculties.OrderBy(f => f.Id).ToListAsync();
-        }
+        if (faculties.Count == 0) return;
 
         var groupData = new[]
         {
-            "CS-221",
-            "CS-231",
-            "DS-241",
-            "BA-221",
-            "EN-231"
+            ("CS-221", "Faculty of Computer Science"),
+            ("CS-231", "Faculty of Computer Science"),
+            ("DS-241", "Faculty of Data Science"),
+            ("BA-221", "Faculty of Business and Engineering"),
+            ("EN-231", "Faculty of Business and Engineering"),
+            ("NS-201", "Faculty of Natural Sciences"),
+            ("PS-202", "Faculty of Social Sciences"),
+            ("CY-301", "Faculty of Cybersecurity"),
+            ("SE-302", "Faculty of Computer Science"),
+            ("AI-401", "Faculty of Data Science")
         };
-
         var existingNames = await context.Groups.Select(g => g.Name).ToListAsync();
-        var groupsToAdd = groupData
-            .Where(name => !existingNames.Contains(name))
-            .Take(5 - await context.Groups.CountAsync())
-            .Select((name, index) => new Group
-            {
-                Name = name,
-                Faculty = faculties[Math.Min(index % faculties.Count, faculties.Count - 1)]
-            })
-            .ToList();
 
-        context.Groups.AddRange(groupsToAdd);
+        foreach (var group in groupData.Where(g => !existingNames.Contains(g.Item1)))
+        {
+            var faculty = faculties.FirstOrDefault(f => f.Name == group.Item2) ?? faculties.First();
+            context.Groups.Add(new Group
+            {
+                Name = group.Item1,
+                Faculty = faculty
+            });
+        }
+
         await context.SaveChangesAsync();
     }
 
@@ -245,6 +252,39 @@ public static class SeedData
         await context.SaveChangesAsync();
     }
 
+    private static async Task SeedCourseGroupsAsync(UniversityDbContext context)
+    {
+        var courses = await context.Courses
+            .Include(c => c.Groups)
+            .OrderBy(c => c.Id)
+            .ToListAsync();
+        var groups = await context.Groups.OrderBy(g => g.Id).ToListAsync();
+
+        if (courses.Count == 0 || groups.Count == 0)
+        {
+            return;
+        }
+
+        for (var index = 0; index < courses.Count; index++)
+        {
+            var course = courses[index];
+            var firstGroup = groups[index % groups.Count];
+            var secondGroup = groups[(index + 1) % groups.Count];
+
+            if (!course.Groups.Any(g => g.Id == firstGroup.Id))
+            {
+                course.Groups.Add(firstGroup);
+            }
+
+            if (!course.Groups.Any(g => g.Id == secondGroup.Id))
+            {
+                course.Groups.Add(secondGroup);
+            }
+        }
+
+        await context.SaveChangesAsync();
+    }
+
     private static async Task SeedAttendanceAsync(UniversityDbContext context)
     {
         var existingCount = await context.Attendances.CountAsync();
@@ -388,7 +428,7 @@ public static class SeedData
                 Title = report.Item1,
                 Description = report.Item2,
                 Content = report.Item2,
-                GeneratedBy = teachers[teacherIndex].Id.ToString(),
+                GeneratedBy = $"{teachers[teacherIndex].FirstName} {teachers[teacherIndex].LastName}",
                 ReportType = "Academic Performance",
                 FilePath = $"/reports/{report.Item1.ToLowerInvariant().Replace(' ', '-')}.pdf",
                 CreatedAt = today.AddDays(-(23 - (teacherIndex * 2))).Date
@@ -397,5 +437,105 @@ public static class SeedData
 
         context.Reports.AddRange(reports);
         await context.SaveChangesAsync();
+    }
+
+    private static async Task SeedSchedulesAsync(UniversityDbContext context)
+    {
+        var existingLessonIds = await context.Schedules.Select(s => s.LessonId).ToListAsync();
+        var lessons = await context.Lessons
+            .Include(l => l.Course)
+            .ThenInclude(c => c!.Groups)
+            .OrderBy(l => l.Date)
+            .Take(10)
+            .ToListAsync();
+        var groups = await context.Groups.OrderBy(g => g.Id).Take(10).ToListAsync();
+
+        if (lessons.Count == 0 || groups.Count == 0)
+        {
+            return;
+        }
+
+        var schedules = lessons
+            .Where(lesson => !existingLessonIds.Contains(lesson.Id))
+            .Select((lesson, index) =>
+            {
+                var group = lesson.Course?.Groups.FirstOrDefault() ?? groups[index % groups.Count];
+                return new Schedule
+                {
+                    GroupId = group.Id,
+                    LessonId = lesson.Id,
+                    DayOfWeek = lesson.Date.DayOfWeek.ToString(),
+                    StartTime = lesson.Date.ToString("HH:mm"),
+                    EndTime = lesson.Date.AddMinutes(90).ToString("HH:mm")
+                };
+            })
+            .ToList();
+
+        context.Schedules.AddRange(schedules);
+        await context.SaveChangesAsync();
+    }
+
+    private static async Task SeedNotificationsAsync(UniversityDbContext context)
+    {
+        if (await context.Notifications.CountAsync() >= 8)
+        {
+            return;
+        }
+
+        var students = await context.Students.OrderBy(s => s.Id).Take(8).ToListAsync();
+        if (students.Count == 0)
+        {
+            return;
+        }
+
+        var notificationData = new[]
+        {
+            ("Welcome to Lumina Campus", "Your account is active and connected to the university workspace."),
+            ("Schedule updated", "Two lessons were moved to new time slots this week."),
+            ("Attendance reminder", "Please review attendance records before Friday."),
+            ("New course materials", "Teachers uploaded fresh materials for active courses."),
+            ("Rating update", "Student ratings were recalculated after the latest grades."),
+            ("Faculty meeting", "Faculty reports are ready for review."),
+            ("Scholarship review", "Top student ratings are available in the Ratings module."),
+            ("System notice", "The university dashboard was refreshed with current analytics.")
+        };
+
+        var existingTitles = await context.Notifications.Select(n => n.Title).ToListAsync();
+        var today = DateTime.Now;
+        var notifications = notificationData
+            .Where(n => !existingTitles.Contains(n.Item1))
+            .Select((n, index) => new Notification
+            {
+                Title = n.Item1,
+                Message = n.Item2,
+                StudentId = students[index % students.Count].Id,
+                CreatedAt = today.AddHours(-index * 4),
+                IsRead = index % 3 == 0
+            })
+            .ToList();
+
+        context.Notifications.AddRange(notifications);
+        await context.SaveChangesAsync();
+    }
+
+    private static async Task NormalizeReportGeneratorsAsync(UniversityDbContext context)
+    {
+        var teachers = await context.Teachers.ToDictionaryAsync(t => t.Id, t => $"{t.FirstName} {t.LastName}");
+        var reports = await context.Reports.ToListAsync();
+        var changed = false;
+
+        foreach (var report in reports)
+        {
+            if (int.TryParse(report.GeneratedBy, out var teacherId) && teachers.TryGetValue(teacherId, out var teacherName))
+            {
+                report.GeneratedBy = teacherName;
+                changed = true;
+            }
+        }
+
+        if (changed)
+        {
+            await context.SaveChangesAsync();
+        }
     }
 }

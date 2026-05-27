@@ -16,7 +16,8 @@ public class DashboardController : Controller
 
     public async Task<IActionResult> Index()
     {
-        var data = await _dashboardService.GetDashboardDataAsync();
+        var email = User?.Identity?.Name;
+        var data = await _dashboardService.GetDashboardDataAsync(email);
         return View(data);
     }
 }
