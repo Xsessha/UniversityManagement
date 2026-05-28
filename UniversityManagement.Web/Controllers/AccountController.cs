@@ -1,3 +1,4 @@
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -33,6 +34,7 @@ public class AccountController : Controller
     public async Task<IActionResult> Login(string email, string password)
     {
         var user = await _userManager.FindByEmailAsync(email);
+
         if (user != null && await _userManager.CheckPasswordAsync(user, password))
         {
             await _signInManager.SignInAsync(user, isPersistent: false);
@@ -47,56 +49,86 @@ public class AccountController : Controller
     public IActionResult Register() => View();
 
     [HttpPost]
-    public async Task<IActionResult> Register(string firstName, string lastName, string email, string password, string role)
+    public async Task<IActionResult> Register(
+        string firstName,
+        string lastName,
+        string email,
+        string password,
+        string role)
     {
-        if (!Enum.TryParse<UserRole>(role, out var parsedRole))
+        if (string.IsNullOrWhiteSpace(firstName) ||
+            string.IsNullOrWhiteSpace(lastName) ||
+            string.IsNullOrWhiteSpace(email) ||
+            string.IsNullOrWhiteSpace(password))
         {
-            ModelState.AddModelError("", "Please select a valid role");
+            ModelState.AddModelError("", "Please fill in all registration fields.");
+            return View();
+        }
+
+        if (!Enum.TryParse<UserRole>(role, true, out var parsedRole) ||
+            !Enum.IsDefined(parsedRole))
+        {
+            ModelState.AddModelError("role", "Select a valid role.");
+            return View();
+        }
+
+        if (await _userManager.FindByEmailAsync(email.Trim()) != null)
+        {
+            ModelState.AddModelError("email", "An account with this email already exists.");
             return View();
         }
 
         var user = new ApplicationUser
         {
-            UserName = email,
-            Email = email,
-            FirstName = firstName,
-            LastName = lastName,
-            Role = parsedRole
+            UserName = email.Trim(),
+            Email = email.Trim(),
+            FirstName = firstName.Trim(),
+            LastName = lastName.Trim(),
+            Role = parsedRole,
+            EmailConfirmed = true
         };
 
         var result = await _userManager.CreateAsync(user, password);
-        if (result.Succeeded)
+
+        if (!result.Succeeded)
         {
-            var roleName = parsedRole.ToString();
-            if (!await _roleManager.RoleExistsAsync(roleName))
+            foreach (var error in result.Errors)
             {
-                await _roleManager.CreateAsync(new IdentityRole(roleName));
+                ModelState.AddModelError(string.Empty, error.Description);
             }
 
-            await _userManager.AddToRoleAsync(user, roleName);
-
-            if (parsedRole == UserRole.Student)
-            {
-                await CreateStudentProfileAsync(user, parsedRole);
-            }
-            else if (parsedRole == UserRole.Teacher)
-            {
-                await CreateTeacherProfileAsync(user, parsedRole);
-            }
-
-            await _signInManager.SignInAsync(user, isPersistent: false);
-            return RedirectToAction("Index", "Dashboard");
+            return View();
         }
 
-        foreach (var error in result.Errors)
-            ModelState.AddModelError("", error.Description);
+        if (!await _roleManager.RoleExistsAsync(parsedRole.ToString()))
+        {
+            await _roleManager.CreateAsync(
+                new IdentityRole(parsedRole.ToString()));
+        }
 
-        return View();
+        await _userManager.AddToRoleAsync(user, parsedRole.ToString());
+
+        if (parsedRole == UserRole.Student)
+        {
+            await CreateStudentProfileAsync(user, parsedRole);
+        }
+        else if (parsedRole == UserRole.Teacher)
+        {
+            await CreateTeacherProfileAsync(user, parsedRole);
+        }
+
+        await _signInManager.SignInAsync(user, isPersistent: false);
+
+        return RedirectToAction("Index", "Dashboard");
     }
 
-    private async Task CreateStudentProfileAsync(ApplicationUser user, UserRole role)
+    private async Task CreateStudentProfileAsync(
+        ApplicationUser user,
+        UserRole role)
     {
-        var group = await _context.Groups.OrderBy(g => g.Id).FirstOrDefaultAsync();
+        var group = await _context.Groups
+            .OrderBy(g => g.Id)
+            .FirstOrDefaultAsync();
 
         var student = new Student
         {
@@ -105,13 +137,17 @@ public class AccountController : Controller
             Email = user.Email ?? string.Empty,
             GroupId = group?.Id ?? 0,
             Rating = 0,
-            Status = UniversityManagement.Core.Enums.StudentStatus.Active
+            Status = StudentStatus.Active
         };
 
         _context.Students.Add(student);
+
         await _context.SaveChangesAsync();
 
-        await CreateWelcomeNotificationAsync(student.Id, "Welcome to Lumina", "Your student dashboard is ready. Your schedule and notifications will update automatically.");
+        await CreateWelcomeNotificationAsync(
+            student.Id,
+            "Welcome to Lumina",
+            "Your student dashboard is ready. Your schedule and notifications will update automatically.");
 
         if (group != null)
         {
@@ -119,7 +155,9 @@ public class AccountController : Controller
         }
     }
 
-    private async Task CreateTeacherProfileAsync(ApplicationUser user, UserRole role)
+    private async Task CreateTeacherProfileAsync(
+        ApplicationUser user,
+        UserRole role)
     {
         var teacher = new Teacher
         {
@@ -130,9 +168,11 @@ public class AccountController : Controller
         };
 
         _context.Teachers.Add(teacher);
+
         await _context.SaveChangesAsync();
 
-        await CreateWelcomeNotificationAsync(0, "Teacher workspace ready", "Your teacher dashboard is ready. You can manage attendance, grades, and lesson updates from here.");
+        // Notification НЕ створюється для Teacher,
+        // тому що Notification використовує StudentId
 
         var courseIds = await _context.Courses
             .Where(c => c.TeacherId == teacher.Id)
@@ -159,7 +199,9 @@ public class AccountController : Controller
 
             foreach (var group in groups)
             {
-                if (!await _context.Schedules.AnyAsync(s => s.GroupId == group.Id && s.LessonId == lesson.Id))
+                if (!await _context.Schedules.AnyAsync(
+                        s => s.GroupId == group.Id &&
+                             s.LessonId == lesson.Id))
                 {
                     _context.Schedules.Add(new Schedule
                     {
@@ -167,7 +209,9 @@ public class AccountController : Controller
                         LessonId = lesson.Id,
                         DayOfWeek = lesson.Date.DayOfWeek.ToString(),
                         StartTime = lesson.Date.ToString("HH:mm"),
-                        EndTime = lesson.Date.AddMinutes(90).ToString("HH:mm")
+                        EndTime = lesson.Date
+                            .AddMinutes(90)
+                            .ToString("HH:mm")
                     });
                 }
             }
@@ -176,7 +220,10 @@ public class AccountController : Controller
         await _context.SaveChangesAsync();
     }
 
-    private async Task CreateWelcomeNotificationAsync(int studentId, string title, string message)
+    private async Task CreateWelcomeNotificationAsync(
+        int studentId,
+        string title,
+        string message)
     {
         _context.Notifications.Add(new Notification
         {
@@ -206,7 +253,9 @@ public class AccountController : Controller
 
         foreach (var lesson in lessons)
         {
-            if (await _context.Schedules.AnyAsync(s => s.GroupId == groupId && s.LessonId == lesson.Id))
+            if (await _context.Schedules.AnyAsync(
+                    s => s.GroupId == groupId &&
+                         s.LessonId == lesson.Id))
             {
                 continue;
             }
@@ -217,7 +266,9 @@ public class AccountController : Controller
                 LessonId = lesson.Id,
                 DayOfWeek = lesson.Date.DayOfWeek.ToString(),
                 StartTime = lesson.Date.ToString("HH:mm"),
-                EndTime = lesson.Date.AddMinutes(90).ToString("HH:mm")
+                EndTime = lesson.Date
+                    .AddMinutes(90)
+                    .ToString("HH:mm")
             });
         }
 
@@ -228,8 +279,10 @@ public class AccountController : Controller
     public async Task<IActionResult> Logout()
     {
         await _signInManager.SignOutAsync();
+
         return RedirectToAction("Index", "Home");
     }
 
     public IActionResult AccessDenied() => View();
 }
+

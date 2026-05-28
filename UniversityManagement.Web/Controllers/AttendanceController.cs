@@ -35,9 +35,11 @@ public class AttendanceController : Controller
         var currentEmail = User.Identity?.Name;
         if (!string.IsNullOrWhiteSpace(currentEmail))
         {
+            var normalized = currentEmail.ToLowerInvariant();
+
             if (User.IsInRole("Student"))
             {
-                var student = _context.Students.FirstOrDefault(s => s.Email.Equals(currentEmail, StringComparison.OrdinalIgnoreCase));
+                var student = _context.Students.AsEnumerable().FirstOrDefault(s => string.Equals(s.Email, currentEmail, StringComparison.OrdinalIgnoreCase));
                 if (student == null)
                     query = query.Where(a => false);
                 else
@@ -45,7 +47,7 @@ public class AttendanceController : Controller
             }
             else if (User.IsInRole("Teacher"))
             {
-                var teacher = _context.Teachers.FirstOrDefault(t => t.Email.Equals(currentEmail, StringComparison.OrdinalIgnoreCase));
+                var teacher = _context.Teachers.AsEnumerable().FirstOrDefault(t => string.Equals(t.Email, currentEmail, StringComparison.OrdinalIgnoreCase));
                 if (teacher == null)
                     query = query.Where(a => false);
                 else
@@ -180,7 +182,8 @@ public class AttendanceController : Controller
         var currentEmail = User.Identity?.Name;
         if (!string.IsNullOrWhiteSpace(currentEmail) && User.IsInRole("Teacher"))
         {
-            lessonsQuery = lessonsQuery.Where(l => l.Course!.Teacher!.Email.Equals(currentEmail, StringComparison.OrdinalIgnoreCase));
+            var normalized = currentEmail.ToLowerInvariant();
+            lessonsQuery = lessonsQuery.Where(l => l.Course!.Teacher!.Email.ToLower() == normalized);
         }
 
         ViewBag.Lessons = lessonsQuery.ToList();

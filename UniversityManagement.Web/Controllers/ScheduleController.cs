@@ -229,9 +229,11 @@ public class ScheduleController : Controller
             return query.Where(s => false);
         }
 
+        var normalized = currentEmail.ToLowerInvariant();
+
         if (User.IsInRole("Student"))
         {
-            var student = _context.Students.FirstOrDefault(s => s.Email.Equals(currentEmail, StringComparison.OrdinalIgnoreCase));
+            var student = _context.Students.AsEnumerable().FirstOrDefault(s => string.Equals(s.Email, currentEmail, StringComparison.OrdinalIgnoreCase));
             if (student == null || student.GroupId == 0)
                 return query.Where(s => false);
             return query.Where(s => s.GroupId == student.GroupId);
@@ -239,7 +241,7 @@ public class ScheduleController : Controller
 
         if (User.IsInRole("Teacher"))
         {
-            var teacher = _context.Teachers.FirstOrDefault(t => t.Email.Equals(currentEmail, StringComparison.OrdinalIgnoreCase));
+            var teacher = _context.Teachers.AsEnumerable().FirstOrDefault(t => string.Equals(t.Email, currentEmail, StringComparison.OrdinalIgnoreCase));
             if (teacher == null)
                 return query.Where(s => false);
             return query.Where(s => s.Lesson != null && s.Lesson.Course != null && s.Lesson.Course.TeacherId == teacher.Id);

@@ -29,13 +29,22 @@ public class GradesController : Controller
         var currentEmail = User.Identity?.Name;
         if (!string.IsNullOrWhiteSpace(currentEmail))
         {
+            var normalized = currentEmail.ToLowerInvariant();
             if (User.IsInRole("Student"))
             {
-                query = query.Where(g => g.Student!.Email.Equals(currentEmail, StringComparison.OrdinalIgnoreCase));
+                var student = _context.Students.AsEnumerable().FirstOrDefault(s => string.Equals(s.Email, currentEmail, StringComparison.OrdinalIgnoreCase));
+                if (student == null)
+                    query = query.Where(g => false);
+                else
+                    query = query.Where(g => g.StudentId == student.Id);
             }
             else if (User.IsInRole("Teacher"))
             {
-                query = query.Where(g => g.Course!.Teacher!.Email.Equals(currentEmail, StringComparison.OrdinalIgnoreCase));
+                var teacher = _context.Teachers.AsEnumerable().FirstOrDefault(t => string.Equals(t.Email, currentEmail, StringComparison.OrdinalIgnoreCase));
+                if (teacher == null)
+                    query = query.Where(g => false);
+                else
+                    query = query.Where(g => g.Course!.TeacherId == teacher.Id);
             }
         }
 
@@ -109,7 +118,8 @@ public class GradesController : Controller
         var currentEmail = User.Identity?.Name;
         if (!string.IsNullOrWhiteSpace(currentEmail) && User.IsInRole("Teacher"))
         {
-            lessonsQuery = lessonsQuery.Where(l => l.Course!.Teacher!.Email.Equals(currentEmail, StringComparison.OrdinalIgnoreCase));
+            var normalized = currentEmail.ToLowerInvariant();
+            lessonsQuery = lessonsQuery.Where(l => l.Course!.Teacher!.Email.ToLower() == normalized);
         }
 
         ViewBag.Lessons = lessonsQuery.ToList();

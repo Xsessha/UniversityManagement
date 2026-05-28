@@ -10,9 +10,9 @@ C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.
 C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\obj\Debug\net9.0\UniversityManagement.Services.AssemblyInfoInputs.cache
 C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\obj\Debug\net9.0\UniversityManagement.Services.AssemblyInfo.cs
 C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\obj\Debug\net9.0\UniversityManagement.Services.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\obj\Debug\net9.0\UniversityManagement.Services.sourcelink.json
 C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\obj\Debug\net9.0\Universi.5EE4208E.Up2Date
 C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\obj\Debug\net9.0\UniversityManagement.Services.dll
 C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\obj\Debug\net9.0\refint\UniversityManagement.Services.dll
 C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\obj\Debug\net9.0\UniversityManagement.Services.pdb
 C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\obj\Debug\net9.0\ref\UniversityManagement.Services.dll
-C:\Users\Lenovo Yoga\OneDrive\Desktop\UniversityManagement\UniversityManagement.Services\obj\Debug\net9.0\UniversityManagement.Services.sourcelink.json

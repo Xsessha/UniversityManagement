@@ -12,7 +12,6 @@
                 @if (!(User.Identity?.IsAuthenticated ?? false))
                 {
                     <a href="@Url.Action("Login", "Account")" class="btn btn-primary btn-lg">Login</a>
-                    <a href="@Url.Action("Register", "Account")" class="btn btn-outline-primary btn-lg">Register</a>
                 }
                 else
                 {
